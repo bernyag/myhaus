@@ -152,7 +152,7 @@ body {
   height: 13%;
   text-align: center;
   padding: 10px;
-  background-color: #3fb6b2;
+  background-color: #669999;
   
   @media screen and (max-width: 980px) {
     div.nav-menu-horiz {

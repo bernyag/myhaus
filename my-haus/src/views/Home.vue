@@ -172,13 +172,13 @@ body {
 }
 h1 {
     font-size: 15pt;
-    color: #20bcd5;
+    color: #669999;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
 }
 h1 span {
-    border: 4px dashed #3fb6b2;
+    border: 4px dashed #669999;
     padding: 10px;
 }
 p {
@@ -257,17 +257,17 @@ li {
 progress {
     width: 70%;
     height: 20px;
-    color: #3fb6b2;
+    color: #669999;
     background: #efefef;
 }
 progress::-webkit-progress-bar {
     background: #efefef;
 }
 progress::-webkit-progress-value {
-    background: #3fb6b2;
+    background: #669999;
 } 
 progress::-moz-progress-bar {
-    color: #3fb6b2;
+    color: #669999;
     background: #efefef;
 }
 iframe, audio {
@@ -285,7 +285,7 @@ form {
     margin-top: 0;
 }
 .submit {
-    background-color: #3fb6b2;
+    background-color: #669999;
     padding: 12px 45px;
     border-radius: 5px;
     cursor: pointer;
