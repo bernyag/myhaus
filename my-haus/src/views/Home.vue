@@ -1,85 +1,148 @@
 <template>
-  <div class="hello">
-    <h1 class="title is-1">Bienvenido a myHaus</h1>
-    <br>
-    <div class="columns is-centered is-mobile">
-        <div class="column is-10">
-        <carousel 
-            class="car"
-            :per-page="1" 
-            :navigationEnabled="true" 
-            :loop="true"
-            >
-            <slide >
-                <!-- <img src="./../assets/fora1.png"> -->
-            </slide>
-            <slide >
-                <!-- <img src="./../assets/fora2.png"> -->
-            </slide>
-            <slide >
-                <!-- <img src="./../assets/fora3.png"> -->
-            </slide>
-            <slide >
-                <!-- <img src="./../assets/fora4.png"> -->
-            </slide>
-        </carousel>
+<html>
+    <head>
+        <title>Myhaus</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        
+        <div id="intro" class="section">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td id="textIntro">Moderna Casa en la Condesa</td>
+                    <td><img id="imgIntro" alt="" src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/10/11/59de6400bacad.jpeg"></td>
+                </tr>
+            </table>
+            
         </div>
-    </div>
-    <h1 class="subtitle is-2">¿Quiénes somos?</h1>
-    <div class="columns is-mobile is-centered" id="itam70">
-      <DIV class="column is-four-fifths">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi iusto architecto earum et adipisci facere sit culpa illo at, totam nam deserunt porro, magnam dolor consectetur error impedit blanditiis odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam quis delectus nesciunt cumque! Molestias exercitationem modi sunt aut odio id optio, temporibus expedita beatae. Sequi veniam iste dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam repellat animi hic consectetur perferendis, aspernatur a consequuntur facere? Qui in soluta incidunt delectus perspiciatis ipsa aspernatur voluptatum architecto omnis.
-          <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur vitae beatae corporis cum ea, eum impedit? In, deleniti fugit doloremque vel exercitationem incidunt impedit maiores sit possimus esse tempora. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit velit ipsam fuga, nostrum inventore numquam delectus molestias molestiae fugiat deleniti sunt reprehenderit, harum sint aspernatur. Nulla temporibus quia et quasi!
-          <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis placeat dicta repudiandae a adipisci, ea minus officia facilis rerum repellat asperiores optio neque fugiat, praesentium ducimus dolores quos maxime qui!Lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus consectetur quam eaque cum accusamus provident suscipit porro dignissimos, aliquid nemo. Iure possimus corporis incidunt provident! Quidem commodi odit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores deserunt fugiat sequi quas, molestiae pariatur quae, dolorem enim rerum, debitis facere dolorum! Maiores, qui. Non fugit eveniet quae cumque?
+        
+        <!-- Mi hogar  -->
+        <div id="mihogar" class="section">
+            <h1><span>Mi hogar</span></h1>
+            <p>
+                Ubicado en el moderno barrio de La Condesa, este apartamento se encuentra a pocos pasos de docenas de cafés, panaderías, restaurantes de mariscos y clubes nocturnos, en todas las direcciones. Pasee por el Bosque de Chapultepec y visite museos y sitios culturales a lo largo del camino.
+                <br/>
+                <br/>
+                La calidad del lugar es excelente, pisos de mármol, muebles de Madera oscura y de piel, aire acondicionado, TV por cabe, Pantalla plana de alta definición de 50 pulgadas, Sonido ambiental Haman Kardon, reproductor de DVD, además también dentro de la suite un servibar, un refrigerador para vinos, un horno de microondas y una cafetera.
+                <br/>
+                <br/>
+                Realmente es un lugar muy hermoso, seguro, tranquilo y privado, con un magnífico jardín con una playa que da al canal, deck de madera, muelles y un pintoresco palafito justo en el canal.
+                
+            </p>
+        </div>
+        
+        
+        <!-- Servicios start -->
+       <div id="servicios" class="section">
+            <h1><span>Servicios</span></h1>
+            <p>Estos son los servicios que ofrecemos:</p>
+            
+        </div>
+        <!-- Servicios end -->
+        
+        <!-- Calificacion start -->
+        <div class="section">
+            <h1><span>Calificación</span></h1>
+            <ul>
+                <li>Limpieza <br />
+                    <progress min="0" max="100" value="80"></progress>
+                </li>
+                <li>Servicio <br />
+                    <progress min="0" max="100" value="50"></progress>
+                </li>
+                <li>Seguridad <br />
+                    <progress min="0" max="100" value="30"></progress>
+                </li>
+            </ul>
+        </div>
+        <!-- Calificacion end -->
+        
+        
+         <!-- Media section start -->
+        <div class="section">
+            <h1><span>Imágenes</span></h1>
+            
+        </div>
+        <!-- Media section end -->
 
-      </DIV>
-    </div>
-    <div class="parallax">
+                <!-- Citas -->
+        <div id="tablaDisp" class="section">
+            <h1><span>Disponibilidad Citas</span></h1>
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td>8-9</td>
+                    <td class="selected">Libre</td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">Libre</td>
+                </tr>
+                <tr>
+                    <td>9-10</td>
+                    <td class="selected">Libre</td>
+                    <td class="selected">Libre</td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10-11</td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">Libre</td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4-5</td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5-6</td>
+                    <td></td>
+                    <td></td>
+                    <td class="selected">Libre</td>
+                    <td></td>
+                    <td class="selected">Libre</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Citas end -->
+        
+        <!-- Form start -->
+       <div class="section">
+            <h1><span>Contacto</span></h1>
+            
+            
+                 
+            <form>
+                <input name="name" placeholder="Nombre" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Mensaje" required ></textarea>
+                <input type="submit" value="Enviar" class="submit" />
+            </form>
+        </div>
+        <!-- Form end -->
+    
+        
+    </body>
+</html>
 
-    </div>
-    <br>
-    <h3 class="subtitle is-2">¿Por qué myHaus?</h3>
-    <DIV class="columns is-mobile is-centered">
-        <div class="column is-four-fifths">
-            • <b class="word"> Inicio Convocatoria Becas:</b>
-            17 de enero al 26 de enero.<br><br>
-
-            • <b class="word"> Integración Extranjero:</b> 25 ó
-            26 de enero.<br><br>
-
-            • <b class="word"> Toma de Protesta:</b> 19 de
-            enero 2:30 pm.<br><br>
-
-            • <b class="word"> Trajineras:</b> 27 de enero.<br><br>
-
-            • <b class="word"> Inicio de Gestión:</b> 22 de enero.<br><br>
-        </div >
-    </DIV>
-    <div id="nosotros"> </div>
-    <h3 class="subtitle is-2">Misión</h3>
-      <DIV class="columns is-mobile is-centered">
-          <div class="column is-four-fifths">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi iusto architecto earum et adipisci facere sit culpa illo at, totam nam deserunt porro, magnam dolor consectetur error impedit blanditiis odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam quis delectus nesciunt cumque! Molestias exercitationem modi sunt aut odio id optio, temporibus expedita beatae. Sequi veniam iste dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam repellat animi hic consectetur perferendis, aspernatur a consequuntur facere? Qui in soluta incidunt delectus perspiciatis ipsa aspernatur voluptatum architecto omnis.
-          <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur vitae beatae corporis cum ea, eum impedit? In, deleniti fugit doloremque vel exercitationem incidunt impedit maiores sit possimus esse tempora. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit velit ipsam fuga, nostrum inventore numquam delectus molestias molestiae fugiat deleniti sunt reprehenderit, harum sint aspernatur. Nulla temporibus quia et quasi!
-          
-          </div >
-      </DIV>
-    <h3 class="subtitle is-2">Visión</h3>
-      <DIV class="columns is-mobile is-centered">
-          <div class="column is-four-fifths">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi iusto architecto earum et adipisci facere sit culpa illo at, totam nam deserunt porro, magnam dolor consectetur error impedit blanditiis odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam quis delectus nesciunt cumque! Molestias exercitationem modi sunt aut odio id optio, temporibus expedita beatae. Sequi veniam iste dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam repellat animi hic consectetur perferendis, aspernatur a consequuntur facere? Qui in soluta incidunt delectus perspiciatis ipsa aspernatur voluptatum architecto omnis.
-          <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur vitae beatae corporis cum ea, eum impedit? In, deleniti fugit doloremque vel exercitationem incidunt impedit maiores sit possimus esse tempora. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit velit ipsam fuga, nostrum inventore numquam delectus molestias molestiae fugiat deleniti sunt reprehenderit, harum sint aspernatur. Nulla temporibus quia et quasi!
-          
-          </div >
-      </DIV>
-    <h3 class="subtitle is-2">Conoce al equipo</h3>
-    <DIV class="columns is-mobile is-centered">
-        <div class="column is-four-fifths">
-           <!-- <img src="./../assets/fora1.png" class="logo"> -->
-           Foto
-        </div >
-    </DIV>
-  </div>
+    
 </template>
 
 <script>
@@ -95,79 +158,190 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#nosotros{width: 100%; height: 100px}
-.word {
-  color: #00805d;
+
+html {
+    margin: 0;
+    padding: 0;
 }
-h3 {
-  margin: 10px 0 0;
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+h1 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+h1 span {
+    border: 4px dashed #3fb6b2;
+    padding: 10px;
 }
-a {
-  color: #42b983;
+p {
+    padding: 0;
+    margin: 0;
 }
-.carr{
-  z-index: 0;
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.section {
+    background-color: #fff;
+    widows: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-.column{
-  padding: 10px;
-  margin: 5px;
+
+
+
+
+#imgIntro {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    vertical-align: middle;
+ 
 }
-.columns{
-  padding: 35px;
-  border-radius: 200px;
-  text-align: justify;
+
+#textIntro{
+    font-size: 35pt;
+    width: 35%;
+    text-align: center;
+    vertical-align: middle;
 }
-.parallax { 
-    // background-image: url("./../assets/para.jpeg");
-    height: 800px; 
-    /* parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .7;
+
+#intro p {
+    font-size: 30pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 1%;
 }
-.logo{
-  max-width: 45%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    }
-.cajas:hover{
-    background:rgba(19, 107, 19, 0.466) !important;
-    transition-delay:.3s;
-    h3 { font-weight:bold; }
+
+#intro table{
+    border: none;
 }
-.cajas{
-    transition: .5s background-color;
-    margin: 35px;
-    h3{     
-   text-align: center;
-    }
+
+
+#mihogar p{
+    text-align: justify;
+    margin: auto;
+    padding-left: 1%;
+    padding-right: 1%;
 }
-.title{
-  text-align: center;
+table {
+    width: 100%;
 }
-.text-center{text-align: center;}
-.subtitle{
-    padding: 20px;
+#tablaDisp table, #tablaDisp th, #tablaDisp td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
 }
-.no-left{
-    padding-left:0px;
+.selected {
+    background-color: #f36f48;
+    font-weight: bold;
+    color: white;
 }
-.is-1{    padding-top: 15px;
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
 }
-.car{
-    //  max-width: 500px !important;
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
     text-align: center;
 }
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
+
 </style>
+
+
+

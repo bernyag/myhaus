@@ -1,4 +1,5 @@
 <template>
+<body>
     <div>
         <footer class="footer">
             <div class="white-gray">
@@ -6,10 +7,10 @@
                     <div class="column is-half is-offset-one-quarter text-center">
                         <div class="columns is-multiline">
                             <div class="column is-one-third text-center">
-                                <a href="http://www.facebook.com/Rutas-AEF-183334135579214/" target="_blank"> <img src="../assets/fb.png" alt="FB" class="icon"></a>
+                                <a href="http://www.facebook.com/" target="_blank"> <img src="../assets/fb.png" alt="FB" class="icon"></a>
                             </div>
                             <div class="column is-one-third text-center">
-                                <a href="https://www.instagram.com/rutasaef/?hl=en" target="_blank"> <img src="../assets/ig.png" alt="FB" class="icon"></a>
+                                <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/ig.png" alt="FB" class="icon"></a>
                             </div>
                             <div class="column is-one-third text-center">
                                 <router-link to="/contacto" target="_blank"><img src="../assets/mail.png" alt="FB" class="icon"></router-link>
@@ -31,6 +32,7 @@
             </div>
         </footer>
     </div>
+</body>
 </template>
 
 
@@ -47,15 +49,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+
 .footer{
   width: 100% !important;
   bottom:0;
   height: 10% !important;
   color: #CCC;
-  padding: 0;
-  margin-top: 115px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 //   position: absolute;
 }
+
+
 .column{
   padding: 10px;
 }

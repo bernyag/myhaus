@@ -1,42 +1,53 @@
 <template>
-  <div>
-    <nav id="navbar">
-      <div class="nav">
-        <div class="nav-content">
-          <div class="nav-icon">
-            <router-link to="/">
-              <img class="b-logo" src="./../assets/logoAEF-01.png" alt="Logo" > 
-            </router-link>              
-          </div>
-          <div class="nav-menu">
-            <div class="nav-menu-horiz">
-              <div class="nav-item"><router-link to="/servicios"> BUSCAR HOGAR</router-link>   </div>
-              <div class="nav-item"><router-link to="/proyectos">OFRECER HOGAR</router-link>   </div>
-              <div class="nav-item"><router-link to="/ACCT">MI HOGAR</router-link></div>
-              <div class="nav-item"><router-link to="/30años">MIS RENTAS</router-link></div>
-              <div class="nav-item"><router-link to="/contacto">CONTACTO</router-link></div>
-            </div>
-            <div class="dropdown" @click="opened = !opened">
-              <button class="dropbtn">... 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" :class="{'displayBlock': opened}">
-                <div @click.prevent="" class="nav-item"><router-link to="/">INICIO</router-link>   </div>
-                <div class="nav-item"><router-link to="/nosotros">NOSOTROS</router-link>   </div>
-                <div class="nav-item"><router-link to="/servicios"> SERVICIOS</router-link>   </div>
-                <div class="nav-item"><router-link to="/proyectos">PROYECTOS</router-link>   </div>
-                <div class="nav-item"><router-link to="/ACCT">ACCT</router-link></div>
-                <div class="nav-item"><router-link to="/30años">30 AÑOS</router-link></div>
-                <div class="nav-item"><router-link to="/transparencia">TRANSPARENCIA</router-link></div>
-                <div class="nav-item"><router-link to="/donar">DONAR</router-link></div>
-                <div  class="nav-item"><router-link to="/contacto">CONTACTO</router-link></div>
+  <html>
+      <head>
+          <title>Myhaus</title>
+          <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      </head>
+
+      <body>
+        <div>
+          <nav id="navbar">
+            <div class="nav">
+              <div class="nav-content">
+                
+                <div class="nav-icon">
+                  <router-link to="/">
+                    <img class="b-logo" alt="Logo" src="https://png.pngtree.com/element_our/sm/20180413/sm_5ad0c06ab28e6.jpg">
+                  </router-link> 
+                  <p id="pLogo">myhaus</p>  
               </div>
-            </div> 
-          </div>
+                <div class="nav-menu">
+                  <div class="nav-menu-horiz">
+                    <div class="nav-item"><router-link to="/servicios"> BUSCAR HOGAR</router-link>   </div>
+                    <div class="nav-item"><router-link to="/proyectos">OFRECER HOGAR</router-link>   </div>
+                    <div class="nav-item"><router-link to="/ACCT">MI HOGAR</router-link></div>
+                    <div class="nav-item"><router-link to="/30años">MIS RENTAS</router-link></div>
+                    <div class="nav-item"><router-link to="/contacto">CONTACTO</router-link></div>
+                  </div>
+                  <div class="dropdown" @click="opened = !opened">
+                    <button class="dropbtn">... 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" :class="{'displayBlock': opened}">
+                      <div @click.prevent="" class="nav-item"><router-link to="/">INICIO</router-link>   </div>
+                      <div class="nav-item"><router-link to="/nosotros">NOSOTROS</router-link>   </div>
+                      <div class="nav-item"><router-link to="/servicios"> SERVICIOS</router-link>   </div>
+                      <div class="nav-item"><router-link to="/proyectos">PROYECTOS</router-link>   </div>
+                      <div class="nav-item"><router-link to="/ACCT">ACCT</router-link></div>
+                      <div class="nav-item"><router-link to="/30años">30 AÑOS</router-link></div>
+                      <div class="nav-item"><router-link to="/transparencia">TRANSPARENCIA</router-link></div>
+                      <div class="nav-item"><router-link to="/donar">DONAR</router-link></div>
+                      <div  class="nav-item"><router-link to="/contacto">CONTACTO</router-link></div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-      </div>
-    </nav>
-  </div>
+      </body>
+  </html>
 </template>
 
 <script>
@@ -51,6 +62,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+
+#plogo {
+  font-family: 'Poppins', sans-serif;
+}
 .nav-content {
   display: inline-block;
 }
@@ -77,6 +100,8 @@ export default {
   height: auto;
   left: 15px;
   width: 105px;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 .dropdown .dropbtn {
   font-size: 16px;
@@ -124,10 +149,11 @@ export default {
   position: fixed;
   float: right;
   width: 100%;
-  height: 10%;
+  height: 13%;
   text-align: center;
   padding: 10px;
-  background-color: white;
+  background-color: #3fb6b2;
+  
   @media screen and (max-width: 980px) {
     div.nav-menu-horiz {
       display: none;
