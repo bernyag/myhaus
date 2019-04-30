@@ -316,7 +316,7 @@ header{
 }
 
 .sesion-box{
-    background-color: rgba(102, 153, 153, 0.70);
+    background-color: rgba(102, 153, 153, 0.80);
     color: #222;
     border-radius: 5px;
     width: 90%;
@@ -335,7 +335,7 @@ header{
 }
 
 .cuenta-box{
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #222;
     border-radius: 5px;
     width: 90%;
