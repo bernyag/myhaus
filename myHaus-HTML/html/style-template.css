@@ -180,9 +180,7 @@ input[type=submit]:active{
     margin-top: 55px;
 }
 
-.sticky .main-nav li ul{
-    float: right;
-}
+
 
 .main-nav li{
     display: inline-block;
@@ -236,7 +234,6 @@ input[type=submit]:active{
     left: 0;
     width: 100%;
     background-color: #eaeaea;
-    z-index: 9999;
 }
 
 .sticky .main-nav{
@@ -254,6 +251,10 @@ input[type=submit]:active{
 /* ---------------------------------------------------------------------*/
 /* SECCION */
 /* ---------------------------------------------------------------------*/
+
+.quienes-somos{
+    margin-top: 20px;
+}
 
 .texto-largo{
     line-height: 145%;
