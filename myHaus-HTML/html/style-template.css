@@ -166,10 +166,11 @@ input[type=submit]:active{
 /* Main navigation*/
 
 .logo-nav{
-    height: 58px;
+    height: 70px;
     width: auto;
     vertical-align: middle;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .main-nav{
