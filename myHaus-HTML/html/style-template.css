@@ -209,7 +209,7 @@ input[type=submit]:active{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #669999;;
+    border-bottom: 2px solid #fff;;
 }
 
 /*Mobile navigation*/
@@ -222,18 +222,21 @@ input[type=submit]:active{
 
 .mobile-nav-icon ion-icon{
     font-size: 200%;
-    color: #669999;
+    color: #fff;
 }
 
 
 /*Sticky navigation*/
 .sticky{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(img/navfoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     position: fixed;
     padding: 7px 0;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #eaeaea;
 }
 
 .sticky .main-nav{
@@ -243,9 +246,9 @@ input[type=submit]:active{
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
     padding: 8px 0px;
-    color: #669999;
+    color: #fff;
 }
-.sticky .main-nav .icon-nav{ color: #669999; }
+.sticky .main-nav .icon-nav{ color: #fff; }
 
 
 /* ---------------------------------------------------------------------*/
