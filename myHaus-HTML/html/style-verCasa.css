@@ -170,6 +170,7 @@ input[type=submit]:active{
     width: auto;
     vertical-align: middle;
     padding-top: 10px;
+    float: left;
     padding-bottom: 10px;
 }
 
@@ -178,6 +179,8 @@ input[type=submit]:active{
     float: right;
     margin-top: 55px;
 }
+
+
 
 .main-nav li{
     display: inline-block;
@@ -219,18 +222,18 @@ input[type=submit]:active{
 
 .mobile-nav-icon ion-icon{
     font-size: 200%;
-    color: #fff;
+    color: #669999;
 }
 
 
 /*Sticky navigation*/
 .sticky{
     position: fixed;
+    padding: 7px 0;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #eaeaea;
-    z-index: 9999;
 }
 
 .sticky .main-nav{
@@ -243,6 +246,22 @@ input[type=submit]:active{
     color: #669999;
 }
 .sticky .main-nav .icon-nav{ color: #669999; }
+
+
+/* ---------------------------------------------------------------------*/
+/* SECCION */
+/* ---------------------------------------------------------------------*/
+
+.quienes-somos{
+    margin-top: 20px;
+}
+
+.texto-largo{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+
+}
 
 
 
