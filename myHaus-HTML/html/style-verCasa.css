@@ -175,6 +175,7 @@ input[type=submit]:active{
 }
 
 .main-nav{
+    
     list-style: none;
     float: right;
     margin-top: 55px;
@@ -228,6 +229,10 @@ input[type=submit]:active{
 
 /*Sticky navigation*/
 .sticky{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(img/navfoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     position: fixed;
     padding: 7px 0;
     top: 0;
@@ -243,9 +248,9 @@ input[type=submit]:active{
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
     padding: 8px 0px;
-    color: #669999;
+    color: #fff;
 }
-.sticky .main-nav .icon-nav{ color: #669999; }
+.sticky .main-nav .icon-nav{ color: #fff; }
 
 
 /* ---------------------------------------------------------------------*/
@@ -346,12 +351,5 @@ footer p{
     text-align: center;
     margin-top: 20px;
 }
-
-
-
-
-
-
-
 
 
