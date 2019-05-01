@@ -78,7 +78,8 @@ h2:after{
 
 h3{
     font-size: 110%;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    font-weight: 400;
 }
 
 /* ------LINKS-----*/
@@ -215,7 +216,7 @@ a:active{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #669999;;
+    border-bottom: 2px solid #fff;;
 }
 
 /*Mobile navigation*/
@@ -224,16 +225,21 @@ a:active{
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    color: #fff;
 }
 
 .mobile-nav-icon ion-icon{
     font-size: 200%;
-    color: #669999;
+    color: #fff;
 }
 
 
 /*Sticky navigation*/
 .sticky{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(img/navfoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     position: fixed;
     padding: 7px 0;
     top: 0;
@@ -249,14 +255,18 @@ a:active{
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
     padding: 8px 0px;
-    color: #669999;
+    color: #fff;
 }
-.sticky .main-nav .icon-nav{ color: #669999; }
+.sticky .main-nav .icon-nav{ color: #fff; }
 
 
 /* ---------------------------------------------------------------------*/
 /* FILTROS */
 /* ---------------------------------------------------------------------*/
+
+.casas{
+    color: #333;
+}
 
 /* ----------SEARCH BAR-------------*/
 
@@ -297,7 +307,7 @@ input[type=text]{
 .filtros-box h3{
     text-align: center;
     font-size: 150%;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 10px;
 }
 
@@ -349,23 +359,23 @@ h4{
 }
 
 .hogar-box img{
-    height: 160px;
-    width: auto;
-    margin: 10px 10px;
-    border-radius: 10%;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0px;
 }
+
 
 .hogar-box .texto-hogar{
     display:inline-block;
-    margin-left: 50px;
+    margin: 10px 10px 0 10px;
     vertical-align: top;
-    margin-top: 20px;
 }
 
 .hogar-box .texto-hogar h3{
     text-transform: uppercase;
     font-size: 90%;
-    font-weight: 300;
+    font-weight: 400;
     word-spacing: 2px;
     letter-spacing: 1px;
 }
