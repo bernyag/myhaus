@@ -576,5 +576,18 @@ footer p{
   opacity: 1;
 }
 
+input[type=text],
+input[type=email]{
+    width: 100%;
+    padding: 5px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 1px;
+    
+}
+.formmail{
+    width: 58%;
+}
 
 
