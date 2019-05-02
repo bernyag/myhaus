@@ -283,9 +283,11 @@ input[type=submit]:active{
 .intro h1{
     color: #fff;
     font-size: 300%;
-    margin-top: 55%;
-    padding-left: 5%;
-    
+}
+
+.intro div{
+    margin-top: 480px;
+    padding-left: 50px;
 }
 
 /******* Descripcion *******/
