@@ -291,8 +291,15 @@ input[type=submit]:active{
 }
 
 /******* Descripcion *******/
+
+.descripcion{
+    background-color: #f4f4f4;
+}
+
 .descripcion-general ul{
     list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 .descripcion-general li{
@@ -301,11 +308,16 @@ input[type=submit]:active{
     padding:0 15px; 
 }
 
-.descriptcion-especifica p{
+.descripcion-especifica{
     padding-top: 25px;
     font-size: 100%;
     color:#000;
-    line-height: 145%
+    line-height: 145%;
+    margin-left: 10%;
+}
+
+.descripcion-especifica li{
+    margin-top: 25px;
 }
 /******* Fototeca *******/
 
@@ -386,8 +398,6 @@ progress::-moz-progress-bar {
     background: #efefef;
 }
 
-
-
 blockquote {
     padding: 2%;
     font-style: italic;
@@ -425,6 +435,7 @@ cite img {
     width: 35%;
     height: auto;
     float: left;
+    margin-top: 20px;
 }
 
 .host h3{
@@ -432,38 +443,49 @@ cite img {
 }
 
 .datos-host{
-    float: right;
+    float: left;
+    margin-top: 20px;
+    font-size: 90%;
+    margin-left: 20px;
 }
 
 .tabladisp h3{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .tabladisp table {
     align-content: center;
-    border: 2px solid #626060;
-    border-collapse: collapse;
     text-align: center;
     table-layout: fixed;
-    width: 100%;
+    width: 90%;
+    border-spacing: 0;
+    margin-left: 5%;
 }
 
 .tabladisp th, td {
-    border: 2px solid #626060;
+    border-bottom: 2px solid #626060;
     border-collapse: collapse;
+    column-gap:normal;
     text-align: center;
     table-layout: fixed;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 90%;
+
 }
 
 .tabladisp tr{
-    border: 2px solid #626060;
     width: 20px;
 }
 
 .selected {
-    background-color: #669999;
     font-weight: bold;
-    color: white;
+    color: #669999;
+}
+
+.ocupado {
+    font-weight: 300;
+    color: lightgray;
 }
 .tabladisp li {
     margin-bottom: 15px;
