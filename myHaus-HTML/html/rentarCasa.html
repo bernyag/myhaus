@@ -28,8 +28,9 @@
         </nav>
         
         <section class="casas">
+            <div class="row"><h2>Busca tu hogar ideal</h2></div>
             <div class="row search-bar">
-                <ion-icon name="search" class="icon-small"></ion-icon><input type="text" name="buscar" id="buscar" placeholder="Búsqueda específica...">
+                <ion-icon class="icon-small" name="search" ></ion-icon><input type="text" name="buscar" id="buscar" placeholder="Búsqueda específica...">
                 <a href="#" class="btn btn-full btn-busca">Buscar</a>
             </div>
             <div class="row">
@@ -37,9 +38,17 @@
                     <div class="filtros-box">
                         <h3>Filtros</h3>
                         <ul class="filtros">
-                            <li><ion-icon name="logo-usd" class="icon-small"></ion-icon><h4>Precio:</h4> 
-                                <br><span>Desde:</span> <input type="text" name="precio" id="precio" placeholder="mín">
-                                <br><span>Hasta: &nbsp;</span><input type="text" name="precio" id="precio" placeholder="máx">
+                            <li><ion-icon class="icon-small" name="logo-usd" ></ion-icon><h4>Precio máx:</h4> 
+                                <br><input type="range" min="2000" max="20000" value="10000" step="500" class="slider" id="myRange"><p>$<span id="demo"></span></p>
+                                <script>
+                                    var slider = document.getElementById("myRange");
+                                    var output = document.getElementById("demo");
+                                    output.innerHTML = slider.value;
+
+                                    slider.oninput = function() {
+                                      output.innerHTML = this.value;
+                                    }
+                                </script>
                             </li> 
                             <li><ion-icon name="business" class="icon-small"></ion-icon><h4>Tipo de vivienda:</h4> 
                                 <br><input type="radio" name="tipo" value="casa">Casa
@@ -78,20 +87,23 @@
                 <div class="col span-1-of-4">
                     <ul class="hogares">
                         <li>
-                            <div class="hogar-box">
-                                <img src="img/Casa1%20cuarto.png" alt="Hogar 1">
-                                <div class="texto-hogar">
-                                    <h3>Loft de lujo </h3>
-                                    <p>
-                                        <strong>Tipo: </strong>Cuarto
-                                        <br><em>Sur de la CDMX, a 5 minutos del ITAM!</em>
-                                        <br>$2000 MXN al mes
-                                        <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon>
+                            <a href="verCasa.html">
+                                <div class="hogar-box">
+                                    <img src="img/Casa1%20cuarto.png" alt="Hogar 1">
+                                    <div class="texto-hogar">
+                                        <h3>Loft de lujo en altavista</h3>
 
-                                    </p>
+                                        <p>
+                                            <strong>Tipo: </strong>Cuarto
+                                            <br><em>Sur de la CDMX, a 5 minutos del ITAM!</em>
+                                            <br>$2000 MXN al mes
+                                            <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon>
+
+                                        </p>
+                                    </div>
+
                                 </div>
-                                
-                            </div>
+                            </a>
                         </li>
 
                     </ul>
@@ -99,20 +111,22 @@
                 <div class="col span-1-of-4">
                     <ul class="hogares">
                         <li>
-                            <div class="hogar-box">
-                                <img src="img/Casa2.jpg" alt="Hogar 2">
-                                <div class="texto-hogar">
-                                    <h3>Hermoso depto. en San Ángel</h3>
-                                    <p>
-                                        <strong>Tipo: </strong>Departamento entero
-                                        <br><em>Gran ubicación en la zona de San Ángel</em>
-                                        <br>$5000 MXN al mes
-                                        <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
+                            <a href="#">
+                                <div class="hogar-box">
+                                    <img src="img/Casa2.jpg" alt="Hogar 2">
+                                    <div class="texto-hogar">
+                                        <h3>Hermoso depto. en San Ángel</h3>
+                                        <p>
+                                            <strong>Tipo: </strong>Departamento entero
+                                            <br><em>Gran ubicación en la zona de San Ángel</em>
+                                            <br>$5000 MXN al mes
+                                            <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
 
-                                    </p>
+                                        </p>
+                                    </div>
+
                                 </div>
-                                
-                            </div>
+                            </a>
                         </li>
 
                     </ul>
@@ -120,20 +134,22 @@
                 <div class="col span-1-of-4">
                     <ul class="hogares">
                         <li>
-                            <div class="hogar-box">
-                                <img src="img/Casa4.jpg" alt="Hogar 3">
-                                <div class="texto-hogar">
-                                    <h3>Tranquila casa para estudiantes</h3>
-                                    <p>
-                                        <strong>Tipo: </strong>Casa entera
-                                        <br><em>Inmejorable ubicación en Altavista. ¡Ideal para roomies!</em>
-                                        <br>$10000 MXN al mes
-                                        <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon>
+                            <a href="#">
+                                <div class="hogar-box">
+                                    <img src="img/Casa4.jpg" alt="Hogar 3">
+                                    <div class="texto-hogar">
+                                        <h3>Tranquila casa para estudiantes</h3>
+                                        <p>
+                                            <strong>Tipo: </strong>Casa entera
+                                            <br><em>Inmejorable ubicación en Altavista. ¡Ideal para roomies!</em>
+                                            <br>$10000 MXN al mes
+                                            <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon>
 
-                                    </p>
+                                        </p>
+                                    </div>
+
                                 </div>
-                                
-                            </div>
+                            </a>
                         </li>
 
                     </ul>
@@ -141,20 +157,22 @@
                 <div class="col span-1-of-4">
                     <ul class="hogares">
                         <li>
-                            <div class="hogar-box">
-                                <img src="img/Departamento1.png" alt="Hogar 4">
-                                <div class="texto-hogar">
-                                    <h3>Lindo cuarto cerca de la UNAM</h3>
-                                    <p>
-                                        <strong>Tipo: </strong>Cuarto
-                                        <br><em>Habitación privada en departamento. Estacionamiento incluido</em>
-                                        <br>$3000 MXN al mes
-                                        <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
+                            <a href="#">
+                                <div class="hogar-box">
+                                    <img src="img/Departamento1.png" alt="Hogar 4">
+                                    <div class="texto-hogar">
+                                        <h3>Lindo cuarto cerca de la UNAM</h3>
+                                        <p>
+                                            <strong>Tipo: </strong>Cuarto
+                                            <br><em>Habitación privada en departamento. Estacionamiento incluido</em>
+                                            <br>$3000 MXN al mes
+                                            <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
 
-                                    </p>
+                                        </p>
+                                    </div>
+
                                 </div>
-                                
-                            </div>
+                            </a>
                         </li>
 
                     </ul>
