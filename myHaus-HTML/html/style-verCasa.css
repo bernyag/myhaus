@@ -355,6 +355,9 @@ input[type=submit]:active{
     background-attachment: fixed;
 }
 
+.calificacion h2{
+    padding-top: 20px;
+}
 .calificacion ul{
     padding-left: 15%;
 }
@@ -415,6 +418,7 @@ cite img {
     vertical-align: middle;
 }
 
+
 /******* Host *******/
 
 .host img{
@@ -429,6 +433,85 @@ cite img {
 
 .datos-host{
     float: right;
+}
+
+.tabladisp h3{
+    padding-bottom: 40px;
+}
+
+.tabladisp table {
+    align-content: center;
+    border: 2px solid #626060;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tabladisp th, td {
+    border: 2px solid #626060;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.tabladisp tr{
+    border: 2px solid #626060;
+    width: 20px;
+}
+
+.selected {
+    background-color: #669999;
+    font-weight: bold;
+    color: white;
+}
+.tabladisp li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.linea{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    color:#669999;
+    
+}
+
+/***** Form ******/
+
+.contact-form {
+    
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+.boton-enviar{
+    background-color: #669999;
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    border-color: #669999;
 }
 
 
