@@ -321,12 +321,22 @@ header{
 }
 
 .sesion-box{
-    background-color: rgba(102, 153, 153, 0.7);
-    color: #333;
+    background-color: #669999;
+    color: #fff;
     border-radius: 10px;
     width: 90%;
     margin-left: 5%;
-    border: 5px solid #548181;
+    border: 1px solid #548181;
+    height: 520px;
+}
+
+.sesion-box .btn-full{
+    background-color: #548181 ;
+}
+.sesion-box .btn-full:hover,
+.sesion-box .btn-full:active{
+    background-color: #486d6d;
+    border: 1px solid #fff;
 }
 
 .sesion-box div{
@@ -346,6 +356,7 @@ header{
     width: 90%;
     margin-left: 5%;
     border: 1px solid #548181;
+    height: 520px;
 }
 
 .cuenta-box div{
@@ -384,13 +395,19 @@ input[type=checkbox]{
     padding-bottom: 10px;
 }
 
-.sesion-box ul li:last-child,
+.sesion-box ul li:last-child{
+    font-size: 60%;
+    padding-top: 30px;
+    margin-bottom: 65px;
+}
+
+.sesion-box ul{
+    padding-top: 50px;
+}
 .cuenta-box ul li:last-child{
     font-size: 60%;
     padding-top: 30px;
 }
-
-
 
 
 /* ---------------------------------------------------------------------*/

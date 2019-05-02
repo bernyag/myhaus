@@ -318,7 +318,6 @@ input[type=submit]:active{
     display: block;
     float: left;
     width: 25%;
-    height: 25%;
     
 }
 
@@ -329,9 +328,8 @@ input[type=submit]:active{
     overflow: hidden;
 }
 
-.foto img{
-    
-    height: 310px;
+.foto img{ 
+    height: 250px;
     width: 100%;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.6s;
