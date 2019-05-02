@@ -363,12 +363,11 @@ footer p{
 }
 .mosaico1{
     float: left;
-    padding: 5px;
     max-height: 367px;
     width: 100%;
 }
 .zoomlight{
-    transition: transform 2s, filter 1.5s ease-in-out;
+    transition: transform 1s, filter 1s ease-in-out;
     transform-origin: center center;
     filter: brightness(50%);
 }
@@ -378,12 +377,26 @@ footer p{
 }
 .mosaico2{
     float: left;
-    padding: 5px;
     height: 195px;
     width: 50%;
+    padding-top: 5px;
+    padding-right: 2.5px;
+}
+.mosaico3{
+    float: left;
+    height: 195px;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 2.5px;
 }
 .margin1{
     margin: 1% 0 1% .5% !important;
+}
+.margin2{
+    margin: .5% .5% .5% .5% !important;
+}
+.margin3{
+    margin: 3% .5% 3% .5% !important;
 }
 
 .starRating:not(old){
@@ -431,7 +444,37 @@ footer p{
   justify-content: center;
     text-align: center;
 }
-.btns{
-  width: 32%;
+.btns1{
+    width: 39%;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btns2{
+    width: 89%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.fullscreen{
+    height: 100vh;
+}
+
+.wide-separator-line{
+    height: 1px;
+    background-color: #5c5b5b;
+    margin: 5px;
+    float: left;
+    width: 96%;
+    text-align: center;
+    margin-top: 15px;
+}
+.unbox{
+    box-sizing: content-box !important;
+}
+.marginsides{
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+    
 }
