@@ -33,13 +33,13 @@
                 <ion-icon class="icon-small" name="search" ></ion-icon><input type="text" name="buscar" id="buscar" placeholder="Búsqueda específica...">
                 <a href="#" class="btn btn-full btn-busca">Buscar</a>
             </div>
-            <div class="row">
+            <div class="row contenido">
                 <div class=" col span-1-of-4">
                     <div class="filtros-box">
                         <h3>Filtros</h3>
                         <ul class="filtros">
                             <li><ion-icon class="icon-small" name="logo-usd" ></ion-icon><h4>Precio máx:</h4> 
-                                <br><input type="range" min="2000" max="20000" value="10000" step="500" class="slider" id="myRange"><p>$<span id="demo"></span></p>
+                                <br><input type="range" min="2000" max="20000" value="20000" step="500" class="slider" id="myRange"><p>$<span id="demo"></span></p>
                                 <script>
                                     var slider = document.getElementById("myRange");
                                     var output = document.getElementById("demo");
@@ -51,36 +51,36 @@
                                 </script>
                             </li> 
                             <li><ion-icon name="business" class="icon-small"></ion-icon><h4>Tipo de vivienda:</h4> 
-                                <br><input type="radio" name="tipo" value="casa">Casa
-                                <br><input type="radio" name="tipo" value="cuarto">Cuarto
-                                <br><input type="radio" name="tipo" value="depto">Departamento
+                                <br><input type="radio" name="tipo" value="casa" class="radio">Casa
+                                <br><input type="radio" name="tipo" value="cuarto" class="radio">Cuarto
+                                <br><input type="radio" name="tipo" value="depto" class="radio">Departamento
                             </li>
                             <li><ion-icon name="bed" class="icon-small"></ion-icon><h4>Camas:</h4>  
-                                <br><input type="radio" name="camas" value="1">1
-                                <br><input type="radio" name="camas" value="2">2
-                                <br><input type="radio" name="camas" value="3">3 o más
+                                <br><input type="radio" name="camas" value="1" class="radio">1
+                                <br><input type="radio" name="camas" value="2" class="radio">2
+                                <br><input type="radio" name="camas" value="3" class="radio">3 o más
                             </li>
                             <li><ion-icon name="key" class="icon-small"></ion-icon><h4>Cuartos:</h4>
-                                <br><input type="radio" name="cuartos" value="1">1
-                                <br><input type="radio" name="cuartos" value="2">2
-                                <br><input type="radio" name="cuartos" value="3">3 o más
+                                <br><input type="radio" name="cuartos" value="1" class="radio">1
+                                <br><input type="radio" name="cuartos" value="2" class="radio">2
+                                <br><input type="radio" name="cuartos" value="3" class="radio">3 o más
                             </li>
                             <li><ion-icon name="body" class="icon-small"></ion-icon><h4>Baños:</h4> 
-                                <br><input type="radio" name="banos" value="1">1
-                                <br><input type="radio" name="banos" value="2">2 o más
+                                <br><input type="radio" name="banos" value="1" class="radio">1
+                                <br><input type="radio" name="banos" value="2" class="radio">2 o más
                             </li>
                             <li><ion-icon name="ribbon" class="icon-small"></ion-icon><h4>Servicios:</h4>
                                 <ul class="servicios">
-                                    <li><input type="checkbox" name="serv">Wifi</li>
-                                    <li><input type="checkbox" name="serv">TV</li>
-                                    <li><input type="checkbox" name="serv">Lavandería</li> 
-                                    <li><input type="checkbox" name="serv">Estacionamiento</li>  
-                                    <li><input type="checkbox" name="serv">Ama de llaves</li> 
-                                    <li><input type="checkbox" name="serv">Seguridad</li>
-                                    <li><input type="checkbox" name="serv">Cocina</li>
+                                    <li><input type="checkbox" name="serv" class="radio">Wifi</li>
+                                    <li><input type="checkbox" name="serv" class="radio">TV</li>
+                                    <li><input type="checkbox" name="serv" class="radio">Lavandería</li> 
+                                    <li><input type="checkbox" name="serv" class="radio">Estacionamiento</li>  
+                                    <li><input type="checkbox" name="serv" class="radio">Ama de llaves</li> 
+                                    <li><input type="checkbox" name="serv" class="radio">Seguridad</li>
+                                    <li><input type="checkbox" name="serv" class="radio">Cocina</li>
                                 </ul> 
                             </li>
-                            <li><a href="#" class="btn btn-full btn-busca">Filtrar</a></li>
+                            <li><button type="button" class="btn btn-full btn-busca" onclick="aplicarFiltros()">Filtrar</button> <button type="button" class="btn btn-ghost" onclick="limpiarFiltros()">Limpiar filtros</button></li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                     <ul class="hogares">
                         <li>
                             <a href="verCasa.html">
-                                <div class="hogar-box">
+                                <div class="hogar-box" id="hogar1">
                                     <img src="img/Casa1%20cuarto.png" alt="Hogar 1">
                                     <div class="texto-hogar">
                                         <h3>Loft de lujo en altavista</h3>
@@ -112,7 +112,7 @@
                     <ul class="hogares">
                         <li>
                             <a href="#">
-                                <div class="hogar-box">
+                                <div class="hogar-box" id="hogar2">
                                     <img src="img/Casa2.jpg" alt="Hogar 2">
                                     <div class="texto-hogar">
                                         <h3>Hermoso depto. en San Ángel</h3>
@@ -135,7 +135,7 @@
                     <ul class="hogares">
                         <li>
                             <a href="#">
-                                <div class="hogar-box">
+                                <div class="hogar-box" id="hogar3">
                                     <img src="img/Casa4.jpg" alt="Hogar 3">
                                     <div class="texto-hogar">
                                         <h3>Tranquila casa para estudiantes</h3>
@@ -158,7 +158,7 @@
                     <ul class="hogares">
                         <li>
                             <a href="#">
-                                <div class="hogar-box">
+                                <div class="hogar-box" id="hogar4">
                                     <img src="img/Departamento1.png" alt="Hogar 4">
                                     <div class="texto-hogar">
                                         <h3>Lindo cuarto cerca de la UNAM</h3>
@@ -209,11 +209,32 @@
             </div>
         </footer>
         
-    
+        <script>
+            function limpiarFiltros() {
+                $('.radio').prop('checked', false);
+                $('.slider').prop('value','20000');
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }
+                document.getElementById("hogar3").style.display = "block";
+                document.getElementById("hogar4").style.display = "block";
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                
+            }
+
+            function aplicarFiltros(){
+                document.getElementById("hogar3").style.display = "none";
+                document.getElementById("hogar4").style.display = "none";
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
             
-            
-        
-        
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="mobile-nav.js"></script>
