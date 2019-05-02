@@ -100,8 +100,10 @@ a:active{
 }
 
 /* ------BUTTONS-----*/
+
 .btn:link, 
-.btn:visited {
+.btn:visited,
+button{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -113,16 +115,24 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited{
     background-color: #669999;
     border: 1px solid #669999;
     color: #fff;
     margin-right: 16px;
 }
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited, 
+button{
+    background-color: transparent;
     border: 1px solid #669999;
     color: #548181;
+}
+
+button{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lato, Arial;
 }
 
 .btn:hover,
@@ -483,3 +493,88 @@ footer p{
     margin-right: 15% !important;
     
 }
+
+
+/* ---------------------------------------------------------------------*/
+/*  POP-UP'S */
+/* ---------------------------------------------------------------------*/
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 27%;
+    right: 24%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 728px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  padding: 10px;
+  background-color: rgba(190, 190, 190, 0.95);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    display: block;
+    background-color: #669999;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    margin-left: 40%;
+}
+
+.form-content{
+    margin-left: 20px;
+}
+
+.form-container ul li{
+    display: inline-block;
+    margin-left: 20%;
+}
+
+
+.mensaje{
+    display: none;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.form-container .btn:first-of-type {
+    margin-top: 50px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #fc6767;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
