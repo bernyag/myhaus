@@ -86,7 +86,7 @@ h3{
 
 a:link,
 a:visited{
-    color: #669999;
+    color: #555;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #669999;
@@ -99,6 +99,8 @@ a:active{
     color: #555;
     border-bottom: 1px solid transparent;
 }
+
+
 
 /* ------BUTTONS-----*/
 .btn:link, 
@@ -246,6 +248,7 @@ a:active{
     left: 0;
     width: 100%;
     background-color: #eaeaea;
+    z-index: 99999;
 }
 
 .sticky .main-nav{
@@ -276,15 +279,11 @@ a:active{
     padding-bottom: 10px;
 }
 
-.texto-largo{
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
 
-}
 
 input[type=text]{
     width: 35%;
+    padding: 10px ;
 }
 
 .btn-busca:link,
@@ -296,6 +295,10 @@ input[type=text]{
 
 
 /* ----------FILTROS-------------*/
+
+.casas h2{
+    margin-top: 20px;
+}
 
 .filtros-box{
     background-color: rgba(102, 153, 153, 0.5);
@@ -344,6 +347,22 @@ h4{
     border: 0;
 }
 
+/* The slider itself */
+.slider {
+  width: 50%; /* Full-width */
+  height: 5px; /* Specified height */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+
 /* ----------HOGARES-------------*/
 .hogares { 
     list-style: none;
@@ -352,16 +371,19 @@ h4{
 }
 
 .hogar-box{
-    background-color: rgba(102, 153, 153, 0.5);
-    border-radius: 5px;
+    background-color: #e0e0e0;
     margin-top: 10px;
-    border: 1px solid #548181;
+    border: 2px solid #9d9d9d;  
+    transition: opacity 0.2s;
+}
+
+.hogar-box:hover{
+    opacity: 0.7;
 }
 
 .hogar-box img{
     height: auto;
     width: 100%;
-    border-radius: 5px;
     margin: 0px;
 }
 
