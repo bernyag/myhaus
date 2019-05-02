@@ -368,6 +368,11 @@ footer p{
     height: auto%;
     text-align: center;
 }
+.medium2{
+    width: 85%;
+    height: auto%;
+    text-align: center;
+}
 .none{
     list-style: none;
 }
