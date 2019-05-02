@@ -175,6 +175,7 @@ input[type=submit]:active{
 }
 
 .main-nav{
+    
     list-style: none;
     float: right;
     margin-top: 55px;
@@ -209,7 +210,7 @@ input[type=submit]:active{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #fff;;
+    border-bottom: 2px solid #669999;;
 }
 
 /*Mobile navigation*/
@@ -222,7 +223,7 @@ input[type=submit]:active{
 
 .mobile-nav-icon ion-icon{
     font-size: 200%;
-    color: #fff;
+    color: #669999;
 }
 
 
@@ -237,6 +238,7 @@ input[type=submit]:active{
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #eaeaea;
 }
 
 .sticky .main-nav{
@@ -349,12 +351,6 @@ footer p{
     text-align: center;
     margin-top: 20px;
 }
-
-
-
-
-
-
 
 
 
