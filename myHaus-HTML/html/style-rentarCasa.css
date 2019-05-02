@@ -6,7 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
+
+ *:focus {outline: none;}
 
 html,
 body{
@@ -104,8 +107,10 @@ a:active{
 
 /* ------BUTTONS-----*/
 .btn:link, 
-.btn:visited {
+.btn:visited,
+button{
     display: inline-block;
+    background-color: transparent;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
@@ -116,7 +121,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+button{
     background-color: #669999;
     border: 1px solid #669999;
     color: #fff;
@@ -125,7 +131,7 @@ a:active{
 .btn-ghost:link,
 .btn-ghost:visited{
     border: 1px solid #669999;
-    color: #e67e22;
+    color: #669999;
 }
 
 .btn:hover,
@@ -271,14 +277,22 @@ a:active{
     color: #333;
 }
 
+.casas h2{
+    margin-top: 50px;
+}
+
 /* ----------SEARCH BAR-------------*/
 
 .casas .search-bar{
     margin-top: 20px;
     border-bottom: 1px solid #ccc; 
     padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
+.contenido{
+    margin-top: 20px;
+}
 
 
 input[type=text]{
@@ -293,12 +307,16 @@ input[type=text]{
     margin-left: 2%;
 }
 
+button{
+    padding: 5px 10px;
+    font-family: Lato, Arial;
+    font-size: 12px;
+}
+
 
 /* ----------FILTROS-------------*/
 
-.casas h2{
-    margin-top: 20px;
-}
+
 
 .filtros-box{
     background-color: rgba(102, 153, 153, 0.5);
