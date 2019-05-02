@@ -93,8 +93,8 @@
                         </div>
                         <div class="col span-2-of-2">
                             
-                            <button class="btn btn-ghost btns1 open-button" onclick="openForm()">Calificar</button>
-                            <div class="form-popup" id="myForm">
+                            <button class="btn btn-ghost btns1 open-button" onclick="openForm('myForm1')">Calificar</button>
+                            <div class="form-popup" id="myForm1">
                                 <form action="/action_page.php" class="form-container">
                                     <div class="form-content">
                                         <h3>Calificación</h3>
@@ -155,15 +155,33 @@
                                             <label for="rating14">1</label>
                                         </span>
                                     </div>
-                                    <p class="mensaje" id="review">¡Calificación guardada!</p>
+                                    <p class="mensaje" id="review1">¡Calificación guardada!</p>
                                     <ul>
-                                        <li><button type="button" class="btn" onclick="saveReview()">Enviar</button></li>
-                                        <li><button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button></li>
+                                        <li><button type="button" class="btn" onclick="saveReview('review1')">Enviar</button></li>
+                                        <li><button type="button" class="btn cancel" onclick="closeForm('myForm1')">Cerrar</button></li>
                                     </ul>
                                 </form>
                             </div> 
-                            
-                            <a href="" class="btn btn-ghost btns1">Contactar</a><br><br>
+                            <button class="btn btn-ghost btns1 open-button" onclick="openForm('myForm2')">Contactar</button>
+                            <div class="form-popup" id="myForm2">
+                                <form action="/action_page.php" class="form-container">
+                                    <div class="form-content">
+                                        <div>
+                                            <ul>
+                                                <br>
+                                                <li class="formmail">Correo: <br><input type="email" name="correo" id="correo" placeholder="nombre@example.com" required></li> <br><br>
+                                                <li class="formmail">Mensaje: <br><input type="text" name="pswd" id="pswd" placeholder="Mensaje..." required> </li><br>
+                                                <li><input type="checkbox" name="recordar" id="recordar" > Notificar por correo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mensaje" id="review2">¡Correo enviado!</p>
+                                    <ul>
+                                        <li><button type="button" class="btn" onclick="saveReview('review2')">Enviar</button></li>
+                                        <li><button type="button" class="btn cancel" onclick="closeForm('myForm2')">Cerrar</button></li>
+                                    </ul>
+                                </form>
+                            </div> 
                         </div>
                         <div class="col span-2-of-2">
                             <a href="" class="btn btn-full btns2">Hacer Pago</a>                      
@@ -201,16 +219,17 @@
         </footer>        
         
         <script>
-            function openForm() {
-                document.getElementById("myForm").style.display = "block";
+            function openForm(form) {
+                document.getElementById(form).style.display = "block";
+            }
+            
+
+            function saveReview(review){
+                document.getElementById(review).style.display = "block";
             }
 
-            function saveReview(){
-                document.getElementById("review").style.display = "block";
-            }
-
-            function closeForm() {
-                document.getElementById("myForm").style.display = "none";
+            function closeForm(form) {
+                document.getElementById(form).style.display = "none";
                 document.getElementById("review").style.display = "none";
             }
         </script>
