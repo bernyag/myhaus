@@ -29,6 +29,11 @@
         margin-left: 0%;
     }
     
+    .main-nav li{
+        margin-left: 10px;
+    }
+    
+    
     
 }
 
@@ -57,7 +62,7 @@
     }
     .main-nav li{
         display: block;
-        
+        margin-left: 25px;
     }
     
     .main-nav li a:link,
@@ -73,7 +78,7 @@
     .sticky .main-nav li a:visited{ padding: 18px 0; }
     
     .sticky .mobile-nav-icon { margin-top: 10px;}
-    .sticky .mobile-nav-icon ion-icon{ color: #555; }
+    .sticky .mobile-nav-icon ion-icon{ color: #fff; }
 
     
     
