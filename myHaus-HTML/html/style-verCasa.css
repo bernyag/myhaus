@@ -431,6 +431,10 @@ cite img {
 
 /******* Host *******/
 
+.host{
+    background-color: #f4f4f4;
+}
+
 .host img{
     width: 35%;
     height: auto;
@@ -451,6 +455,7 @@ cite img {
 
 .tabladisp h3{
     padding-bottom: 20px;
+    margin-left: 5%;
 }
 
 .tabladisp table {
@@ -485,7 +490,7 @@ cite img {
 
 .ocupado {
     font-weight: 300;
-    color: lightgray;
+    color: #c6c6c6;
 }
 .tabladisp li {
     margin-bottom: 15px;
