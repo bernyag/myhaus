@@ -382,13 +382,13 @@ footer p{
     width: 100%;
 }
 .zoomlight{
-    transition: transform 1s, filter 1s ease-in-out;
+    transition: transform 0.3s, filter 0.3s ease-in-out;
     transform-origin: center center;
     filter: brightness(50%);
 }
 .zoomlight:hover{
     filter: brightness(100%);
-  transform: scale(1.01);
+    transform: scale(1.01);
 }
 .mosaico2{
     float: left;
@@ -412,6 +412,11 @@ footer p{
 }
 .margin3{
     margin: 3% .5% 3% .5% !important;
+}
+
+
+.acciones{
+    margin-top: 4fce0px !important;
 }
 
 .starRating:not(old){
@@ -456,8 +461,9 @@ footer p{
 }
 .center{
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     text-align: center;
+    word-spacing: 5px;
 }
 .btns1{
     width: 39%;
@@ -562,6 +568,12 @@ footer p{
     padding-top: 3%;
 }
 
+textarea{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .form-container .btn:first-of-type {
     margin-top: 50px;
 }
@@ -576,5 +588,18 @@ footer p{
   opacity: 1;
 }
 
+input[type=text],
+input[type=email]{
+    width: 100%;
+    padding: 5px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 1px;
+    
+}
+.formmail{
+    width: 58%;
+}
 
 
