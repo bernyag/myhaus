@@ -101,7 +101,8 @@ a:active{
 
 /* ------BUTTONS-----*/
 .btn:link, 
-.btn:visited {
+.btn:visited,
+button{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -113,7 +114,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited ,
+button{
     background-color: #669999;
     border: 1px solid #669999;
     color: #fff;
