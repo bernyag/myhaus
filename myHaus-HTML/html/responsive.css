@@ -38,9 +38,18 @@
         margin-left: 0%;
     }
     
+    
+    .logo-header{
+        height: 10px;
+        width: auto;
+    }
     .plan-price { font-size: 250%; }
     
     .contact-form{ width: 80%; }
+    
+    .main-nav li{
+        margin-left: 20px;
+    }
     
 }
 
@@ -79,6 +88,7 @@
     }
     .main-nav li{
         display: block;
+        margin-left: 25px;
     }
     .main-nav li a:link,
     .main-nav li a:visited{
