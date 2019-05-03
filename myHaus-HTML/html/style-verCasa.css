@@ -354,6 +354,28 @@ input[type=submit]:active{
 }
 
 
+/******* Servicios *******/
+
+
+
+.un-servicio{
+    background-color: #e0dfdf;
+    border-radius: 7%;
+    width:20%;
+   
+}
+
+.icon-big{
+    padding-left: 40%;
+    color: #669999;
+}
+
+.servicios h4{
+    color: #669999;
+    text-align: center;
+}
+
+
 /******* Calificacion *******/
 
 
