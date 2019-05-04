@@ -286,8 +286,15 @@ input[type=submit]:active{
 }
 
 .intro div{
-    margin-top: 480px;
+    margin-top: 460px;
     padding-left: 50px;
+}
+
+.intro a{
+    margin-left: 75%;
+    position: fixed;
+    z-index: 99999;
+    transform: translateY(-500px)
 }
 
 /******* Descripcion *******/
@@ -314,11 +321,14 @@ input[type=submit]:active{
     color:#000;
     line-height: 145%;
     margin-left: 10%;
+    text-align: justify;
 }
 
 .descripcion-especifica li{
     margin-top: 25px;
 }
+
+
 /******* Fototeca *******/
 
 .fotos-carrusel{
@@ -356,23 +366,48 @@ input[type=submit]:active{
 
 /******* Servicios *******/
 
-
-
-.un-servicio{
-    background-color: #e0dfdf;
-    border-radius: 7%;
-    width:20%;
-   
+.servicios{
+    background-color: #f4f4f4;
+}
+.serv-list{
+    text-align: center;
+    border-right: 1px solid #ccc;
+    height: 350px;
 }
 
-.icon-big{
+.un-servicio{
+    width:20%;
+    margin-bottom: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.un-servicio .icon-big{
     padding-left: 40%;
     color: #669999;
+    font-size: 140%;
+    margin-bottom: 10px;
 }
 
 .servicios h4{
     color: #669999;
-    text-align: center;
+    font-size: 60%;
+}
+.servicios h2{
+    margin-top: -50px;
+}
+
+.reglas{
+    border-left: 1px solid #ccc;
+    height: 350px;
+}
+
+.servicios ul li{
+    list-style: decimal;
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 
