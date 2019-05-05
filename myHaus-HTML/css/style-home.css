@@ -306,14 +306,45 @@ header{
 .sign-up h2{ color: #fff; }
 .sign-up h3{ text-align: center; }
 
-.sign-up ul{
+.cuenta-box ul{
     list-style: none;
 }
-.sign-up ul li{
+.cuenta-box ul li{
     margin-bottom: 20px;
 }
-.sign-up li input{
+.cuenta-box li input{
     margin-left: 10px;
+}
+
+.info-cuentas{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 520px;
+    border: 1px solid #548181;
+}
+
+.info-cuentas p{
+    margin: 5px 20px;
+}
+.info-cuentas h3{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+    border-bottom: 1px solid #669999;
+    width: 50%;
+}
+.info-cuentas h3:last-of-type{
+    margin-top: 20px;
+}
+.icon-cuenta{
+    font-size: 110%;
+    margin-right: 10px;
+    color: #669999;
+}
+
+.info-cuentas ul li{
+    list-style: decimal;
+    margin-left: 10%;
+    margin-bottom: 10px;
 }
 
 .sesion-text{
@@ -374,8 +405,8 @@ header{
     border: 0;
 }
 
-input[type=text],
-input[type=email]{
+.cuenta-box input[type=text],
+.cuenta-box input[type=email]{
     width: 50%;
     padding: 5px;
     margin-right: 20px;
@@ -385,7 +416,7 @@ input[type=email]{
     
 }
 
-input[type=checkbox]{
+.cuenta-box input[type=checkbox]{
     margin-right: 10px;
 }
 
@@ -408,6 +439,187 @@ input[type=checkbox]{
     font-size: 60%;
     padding-top: 30px;
 }
+
+
+/* ---------------------------------------------------------------------*/
+/*  Crear cuenta pop up */
+/* ---------------------------------------------------------------------*/
+
+/* Full-width input fields */
+.modal input[type=text], 
+.modal input[type=password],
+.modal input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.cuenta-box span{
+    display: block;
+    font-size: 70%;
+    color: #669999;
+    margin-top: 20px;
+}
+
+/* Set a style for all buttons */
+ button{
+    font-size: 70%;
+    color: #669999; 
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 100;
+}
+
+button:hover{
+    color: #000;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+    color: #fff;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal input[type=text],
+.modal input[type=email],
+.modal input[type=password]{
+    padding: 5px 10px;
+    width: 70%;
+}
+
+
+.container ul{
+    margin-top: 10px;
+    list-style: none;
+}
+.container ul li{
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+.container button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.container p{
+    font-size: 90%;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.cancelbtn{
+    margin: 5px 10%;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
 
 
 /* ---------------------------------------------------------------------*/
