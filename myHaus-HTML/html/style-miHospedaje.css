@@ -413,6 +413,9 @@ footer p{
 .margin3{
     margin: 3% .5% 3% .5% !important;
 }
+.margin2PC{
+    margin: 2% !important;
+}
 
 
 .acciones{
@@ -601,5 +604,31 @@ input[type=email]{
 .formmail{
     width: 58%;
 }
+.intro{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url(img/Casa1%20sala.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 0;
+    padding-right: 0;
+    margin-right: 0;   
+}
 
-
+.intro h1{
+    color: #fff;
+    font-size: 300%;
+}
+.info-cuentas{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #548181;
+    width: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+.info-cuentas h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid #669999;
+}
