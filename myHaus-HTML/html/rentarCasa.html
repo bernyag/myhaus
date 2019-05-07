@@ -84,15 +84,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col span-1-of-4">
-                    <ul class="hogares">
-                        <li>
+                <div class="col span-1-of-4" id="cuarto1">
+                    <div class="hogares">
                             <a href="verCasa.html">
-                                <div class="hogar-box" id="hogar1">
+                                <div class="hogar-box" >
                                     <img src="img/Casa1%20cuarto.png" alt="Hogar 1">
                                     <div class="texto-hogar">
                                         <h3>Loft de lujo en altavista</h3>
-
                                         <p>
                                             <strong>Tipo: </strong>Cuarto
                                             <br><em>Sur de la CDMX, a 5 minutos del ITAM!</em>
@@ -104,15 +102,12 @@
 
                                 </div>
                             </a>
-                        </li>
-
-                    </ul>
+                    </div>
                 </div>
-                <div class="col span-1-of-4">
-                    <ul class="hogares">
-                        <li>
+                <div class="col span-1-of-4" id="depto1">
+                    <div class="hogares">
                             <a href="#">
-                                <div class="hogar-box" id="hogar2">
+                                <div class="hogar-box" >
                                     <img src="img/Casa2.jpg" alt="Hogar 2">
                                     <div class="texto-hogar">
                                         <h3>Hermoso depto. en San Ángel</h3>
@@ -127,15 +122,12 @@
 
                                 </div>
                             </a>
-                        </li>
-
-                    </ul>
+                    </div>
                 </div>
-                <div class="col span-1-of-4">
-                    <ul class="hogares">
-                        <li>
+                <div class="col span-1-of-4" id="casa1">
+                    <div class="hogares">
                             <a href="#">
-                                <div class="hogar-box" id="hogar3">
+                                <div class="hogar-box">
                                     <img src="img/Casa4.jpg" alt="Hogar 3">
                                     <div class="texto-hogar">
                                         <h3>Tranquila casa para estudiantes</h3>
@@ -150,32 +142,27 @@
 
                                 </div>
                             </a>
-                        </li>
-
-                    </ul>
+                    </div>
                 </div>
-                <div class="col span-1-of-4">
-                    <ul class="hogares">
-                        <li>
-                            <a href="#">
-                                <div class="hogar-box" id="hogar4">
-                                    <img src="img/Departamento1.png" alt="Hogar 4">
-                                    <div class="texto-hogar">
-                                        <h3>Lindo cuarto cerca de la UNAM</h3>
-                                        <p>
-                                            <strong>Tipo: </strong>Cuarto
-                                            <br><em>Habitación privada en departamento. Estacionamiento incluido</em>
-                                            <br>$3000 MXN al mes
-                                            <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
+                <div class="col span-1-of-4" id="cuarto2">
+                    <div class="hogares">
+                        <a href="#">
+                            <div class="hogar-box" >
+                                <img src="img/Departamento1.png" alt="Hogar 4">
+                                <div class="texto-hogar">
+                                    <h3>Lindo cuarto cerca de la UNAM</h3>
+                                    <p>
+                                        <strong>Tipo: </strong>Cuarto
+                                        <br><em>Habitación privada en departamento. Estacionamiento incluido</em>
+                                        <br>$3000 MXN al mes
+                                        <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star-half" class="icon-small"></ion-icon><ion-icon name="star-outline" class="icon-small"></ion-icon>
 
-                                        </p>
-                                    </div>
-
+                                    </p>
                                 </div>
-                            </a>
-                        </li>
 
-                    </ul>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         
@@ -216,19 +203,45 @@
                 var slider = document.getElementById("myRange");
                 var output = document.getElementById("demo");
                 output.innerHTML = slider.value;
+                
                 slider.oninput = function() {
-                output.innerHTML = this.value;
+                    output.innerHTML = this.value;
                 }
-                document.getElementById("hogar3").style.display = "block";
-                document.getElementById("hogar4").style.display = "block";
+                
+                document.getElementById("cuarto1").style.display = "block";
+                document.getElementById("cuarto2").style.display = "block";
+                document.getElementById("casa1").style.display = "block";
+                document.getElementById("depto1").style.display = "block";
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
                 
             }
 
             function aplicarFiltros(){
-                document.getElementById("hogar3").style.display = "none";
-                document.getElementById("hogar4").style.display = "none";
+                var tipo = $("input[name='tipo']:checked").val();
+                
+                if(tipo == 'casa'){
+                    document.getElementById("casa1").style.display = "block";
+                    document.getElementById("depto1").style.display = "none";
+                    document.getElementById("cuarto1").style.display = "none";
+                    document.getElementById("cuarto2").style.display = "none";
+                }else{
+                    if(tipo == 'cuarto'){
+                        document.getElementById("cuarto1").style.display = "block";
+                        document.getElementById("cuarto2").style.display = "block";
+                        document.getElementById("casa1").style.display = "none";
+                        document.getElementById("depto1").style.display = "none";
+                    }
+                    else{
+                        if(tipo == 'depto'){
+                            document.getElementById("depto1").style.display = "block";
+                            document.getElementById("casa1").style.display = "none";
+                            document.getElementById("cuarto1").style.display = "none";
+                            document.getElementById("cuarto2").style.display = "none";
+                        }
+                    }
+                }
+                
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
