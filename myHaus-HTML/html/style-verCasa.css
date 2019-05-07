@@ -570,7 +570,7 @@ cite img {
     margin: 0 auto;
 }
 
-input[type=text],
+input[type=text], input[type=password],
 input[type=email],
 select,
 textarea {
