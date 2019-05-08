@@ -266,14 +266,145 @@ input[type=submit]:active{
 /* SECCIONS */
 /* ---------------------------------------------------------------------*/
 
+/******* Intro *******/
+.intro{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 1)), url(img/renta.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 0;
+    padding-right: 0;
+    margin-right: 0;
+}
 
+.intro h1{
+    color: #fff;
+    font-size: 300%;
+}
+
+.intro div{
+    margin-top: 460px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.intros a{
+    margin-left: 85%;
+    margin-top: 70%;
+    position: fixed;
+    z-index: 99999;
+    transform: translateY(-500px)
+}
+
+/***************************/
 
 /******* Descripción *******/
+.descripcion{
+    margin-top: -7%;
+    margin-bottom: -5%;
+}
+.contact-form {  
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: rgb(102, 153, 153,0.6);
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
 
 /***************************/
 
 
 /******* filtro y servicios *******/
+
+
+
+.filtros-box{
+    background-color: rgba(102, 153, 153, 0.5);
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #548181;
+    height: 550px;
+    width: 50px;
+}
+
+.filtros-box h2{
+    text-align: center;
+    align-content: center;
+    font-size: 150%;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+h4{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.filtros{
+    list-style: none;
+}
+
+
+
+.filtros li{
+    text-align: center;
+    font-size: 80%;
+    padding:10px 10px;
+    border-bottom: 1px dotted #548181;
+    border-bottom-width: 60%;
+}
+
+.filtros li:last-child{
+    text-align: center;
+    border-bottom: 0px solid #548181;
+}
+
+.filyser{
+    margin-left: 22%;
+}
+.filyser .col{
+    width:35%; 
+}
+
+.filtros .ul{
+    list-style: none;
+    text-align: center;
+    align-content: center;
+    border-bottom: 0px solid #548181;
+}
+
+.filtros .li .input,
+.filtros .li .span{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+.filtros .servicios{ list-style: none; }
+.filtros .servicios li{ 
+    margin-left: -10px;
+    text-align: left;
+    border: 0;
+}
 
 /***************************/
 
@@ -281,7 +412,72 @@ input[type=submit]:active{
 /******* Fotos *******/
 
 /***************************/
+
+
 /******* Reglamento y disponibilidad *******/
+
+.reglas-form {  
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.tabladisp h3{
+    padding-bottom: 20px;
+    margin-left: 5%;
+}
+
+.tabladisp table {
+    align-content: center;
+    text-align: center;
+    table-layout: fixed;
+    width: 90%;
+    border-spacing: 0;
+    margin-left: 5%;
+}
+
+.tabladisp th, td {
+    border-bottom: 2px solid #626060;
+    border-collapse: collapse;
+    column-gap:normal;
+    text-align: center;
+    table-layout: fixed;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 90%;
+
+}
+
+.table{
+    align-content: center;
+    margin-left:  20px;
+}
+.tabladisp tr{
+    width: 40px;
+}
+
+.selected {
+    font-weight: bold;
+    color: #669999;
+}
+
+.ocupado {
+    font-weight: 300;
+    color: #c6c6c6;
+}
+.tabladisp li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.linea{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+    color:#669999;
+    
+}
+
 
 /***************************/
 

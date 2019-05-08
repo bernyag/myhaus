@@ -8,9 +8,8 @@
         <link rel="stylesheet" type="text/css" href="Grid.css">
         <link rel="stylesheet" type="text/css" href="responsive.css">
         <link rel="stylesheet" type="text/css" href="/css/querries-home.css">
-        <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
         <title>myhaus - Ofrecer Hogar</title>
-        <link rel="icon" type="image/ico" href="html/img/logo-negro.png" />
+        <link rel="icon" type="image/ico" href="img/logo-negro.png"/>
         
         
     </head>
@@ -30,12 +29,76 @@
                 </div>
         </nav>
         
+        <!-- Intro section-->
+        
+        <section class="intro">
+            <div>
+                <h1>¡Renta tu casa <br> ahora en myhaus!</h1>
+            </div>
+        </section>
+        
+        
+        <section class="intros">
+            <div>
+                <a class="btn btn-full js--scroll-to-contact" id="btn-contacto" href="#">Subir Datos</a>
+            </div>
+        </section>
+        
+        <!-- Ends intro section-->
+        
         
         <!-- Descripcion section-->
         
+        
         <section class="descripcion">
+            <h2>Datos Generales</h2>
             <div class="row">
-                <h2>Datos Generales</h2>
+                
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Nombre de la Casa/Título</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre o título a mostrar" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Descripción Breve</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Esta descripción aparecerá debajo de tu anuncio cuando los usuarios busquen hogares, debe ser muy breve y dar una primera idea del hogar que ofreces."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Descripción General</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Esta descripción aparecerá en la página de tu casa, deberá ser lo más detallada posible para permitirle a los usuarios saber que estas ofreciendo."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Precio mensual</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <ion-icon class="icon-small" name="logo-usd" ></ion-icon>
+                                <br><input type="range" min="2000" max="50000" value="20000" step="250" class="slider" id="myRange"><p>$<span id="demo"></span></p>
+                                <script>
+                                    var slider = document.getElementById("myRange");
+                                    var output = document.getElementById("demo");
+                                    output.innerHTML = slider.value;
+
+                                    slider.oninput = function() {
+                                      output.innerHTML = this.value;
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                    
+                </form>
             </div>
         </section>
         
@@ -44,14 +107,49 @@
         <!-- filyser section-->
         
         <section class="filyser">
-            <div class="row">
-                <div class="col span-1-of-2 filtros">
-                    <h2>Características</h2>
+
+                
+                <div class="col span-1-of-2 filtros-box">
+                <h2>Características</h2>
+                    <ul class="filtros">
+                            <li><ion-icon name="business" class="icon-small"></ion-icon><h4>Tipo de vivienda:</h4> 
+                                <br><input type="radio" name="tipo" value="casa" class="radio">Casa
+                                <br><input type="radio" name="tipo" value="cuarto" class="radio">Cuarto
+                                <br><input type="radio" name="tipo" value="depto" class="radio">Departamento
+                            </li>
+                            <li><ion-icon name="bed" class="icon-small"></ion-icon><h4>Camas:</h4>  
+                                <br><input type="radio" name="camas" value="1" class="radio">1
+                                <br><input type="radio" name="camas" value="2" class="radio">2
+                                <br><input type="radio" name="camas" value="3" class="radio">3 o más
+                            </li>
+                            <li><ion-icon name="key" class="icon-small"></ion-icon><h4>Cuartos:</h4>
+                                <br><input type="radio" name="cuartos" value="1" class="radio">1
+                                <br><input type="radio" name="cuartos" value="2" class="radio">2
+                                <br><input type="radio" name="cuartos" value="3" class="radio">3 o más
+                            </li>
+                            <li><ion-icon name="body" class="icon-small"></ion-icon><h4>Baños:</h4> 
+                                <br><input type="radio" name="banos" value="1" class="radio">1
+                                <br><input type="radio" name="banos" value="2" class="radio">2 o más
+                            </li>
+                        </ul>
                 </div>
-                <div class="col span-1-of-2 servicios">
+                <div class="col span-1-of-2 filtros-box">
                     <h2>Servicios</h2>
+                    <ul class="filtros">
+                        <li><ion-icon name="ribbon" class="icon-small"></ion-icon><h4>Cuentas con:</h4>
+                                <ul class="servicios">
+                                    <li><input type="checkbox" name="serv" class="radio">Wifi</li>
+                                    <li><input type="checkbox" name="serv" class="radio">TV</li>
+                                    <li><input type="checkbox" name="serv" class="radio">Lavandería</li> 
+                                    <li><input type="checkbox" name="serv" class="radio">Estacionamiento</li>  
+                                    <li><input type="checkbox" name="serv" class="radio">Ama de llaves</li> 
+                                    <li><input type="checkbox" name="serv" class="radio">Seguridad</li>
+                                    <li><input type="checkbox" name="serv" class="radio">Cocina</li>
+                                </ul> 
+                            </li>
+                    </ul>
                 </div>
-            </div>
+
         </section>
         
         <!-- Ends descripcion section-->
@@ -60,7 +158,7 @@
         
         <section class="fotos">
             <div class="row">
-                <h2>Fotos</h2>
+                <h2><br><br><br><br><br><br><br><br><br><br><br>Fotos</h2>
                 
             </div>
         </section>
@@ -73,9 +171,78 @@
             <div class="row">
                 <div class="col span-1-of-2 reglamento">
                     <h2>Reglamento</h2>
+                    <div class="row">
+                
+                        <form method="post" action="#" class="reglas-form">
+                            <div class="row">
+                                <div class="col span-1-of-4">
+                                    <label>Reglas:</label>
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <textarea name="message" placeholder="Esta area es para exponer las reglas que tenga su hogar."></textarea>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
+                
                 <div class="col span-1-of-2 disponibilidad">
                     <h2>Disponibilidad Anfitrión</h2>
+                    <p>Selecciona los dias donde los usuarios puedan agendar citas para ver la casa<br><br></p>
+                     
+                        <table>
+                            <tr>
+                                <th>Día</th>
+                                <th>Lun</th>
+                                <th>Mar</th>
+                                <th>Mier</th>
+                                <th>Jue</th>
+                                <th>Vie</th>
+                            </tr>
+                            <tr>
+                                <td>8-9</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                            </tr>
+                            <tr>
+                                <td>9-10</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                            </tr>
+                            <tr>
+                                <td>10-11</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                            </tr>
+                            <tr>
+                                <td>4-5</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                            </tr>
+                            <tr>
+                                <td>5-6</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                <td class="ocupado">Ocupado</td>
+                                
+                            </tr>
+                        </table>
+                    
                 </div>
             </div>
         </section>
