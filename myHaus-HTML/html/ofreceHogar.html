@@ -173,11 +173,10 @@
                 
                         <form method="post" action="#" class="reglas-form">
                             <div class="row">
-                                <div class="col span-1-of-4">
-                                    <label>Reglas:</label>
-                                </div>
                                 <div class="col span-3-of-4">
-                                    <textarea name="message" placeholder="Esta area es para exponer las reglas que tenga su hogar."></textarea>
+                                    <textarea name="message" placeholder="Esta área es para exponer las reglas que tendrá su hogar.      
+
+Recomendamos escribirlo en forma de lista..."></textarea>
                                 </div>
                             </div>
 
@@ -186,12 +185,12 @@
                 </div>
                 
                 <div class="col span-1-of-2 disponibilidad">
-                    <h2>Disponibilidad Anfitrión</h2>
-                    <p>Selecciona los dias donde los usuarios puedan agendar citas para ver la casa<br><br></p>
+                    <h2>Disponibilidad anfitrión</h2>
+                    <p>Haz click en los campos para seleccionar las fechas en que los usuarios pueden agendar una cita para ver la casa<br><br></p>
                      
-                        <table>
+                        <table id="myTable" class="tabladisp">
                             <tr>
-                                <th>Día</th>
+                                <th>Hra\Día</th>
                                 <th>Lun</th>
                                 <th>Mar</th>
                                 <th>Mier</th>
@@ -200,43 +199,49 @@
                             </tr>
                             <tr>
                                 <td>8-9</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
+                                <td id="1"  class="edo" onclick="selected(1)">Ocupado</td>
+                                <td id="2"  class="edo" onclick="selected(2)">Ocupado</td>
+                                <td id="3"  class="edo" onclick="selected(3)">Ocupado</td>
+                                <td id="4"  class="edo" onclick="selected(4)">Ocupado</td>
+                                <td id="5"  class="edo" onclick="selected(5)">Ocupado</td>
+                                
+                            
                             </tr>
                             <tr>
                                 <td>9-10</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
+                                <td id="6"  class="edo" onclick="selected(6)">Ocupado</td>
+                                <td id="7"  class="edo" onclick="selected(7)">Ocupado</td>
+                                <td id="8"  class="edo" onclick="selected(8)">Ocupado</td>
+                                <td id="9"  class="edo" onclick="selected(9)">Ocupado</td>
+                                <td id="10" class="edo" onclick="selected(10)">Ocupado</td>
+                                
                             </tr>
                             <tr>
                                 <td>10-11</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
+                                <td id="11"  class="edo" onclick="selected(11)">Ocupado</td>
+                                <td id="12"  class="edo" onclick="selected(12)">Ocupado</td>
+                                <td id="13"  class="edo" onclick="selected(13)">Ocupado</td>
+                                <td id="14"  class="edo" onclick="selected(14)">Ocupado</td>
+                                <td id="15"  class="edo" onclick="selected(15)">Ocupado</td>
+
                             </tr>
                             <tr>
-                                <td>4-5</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
+                                <td>16-17</td>
+                                <td id="16"  class="edo" onclick="selected(16)">Ocupado</td>
+                                <td id="17"  class="edo" onclick="selected(17)">Ocupado</td>
+                                <td id="18"  class="edo" onclick="selected(18)">Ocupado</td>
+                                <td id="19"  class="edo" onclick="selected(19)">Ocupado</td>
+                                <td id="20"  class="edo" onclick="selected(20)">Ocupado</td>
+                                
                             </tr>
                             <tr>
-                                <td>5-6</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
-                                <td class="ocupado">Ocupado</td>
+                                <td>17-18</td>
+                                <td id="21"  class="edo" onclick="selected(21)">Ocupado</td>
+                                <td id="22"  class="edo" onclick="selected(22)">Ocupado</td>
+                                <td id="23"  class="edo" onclick="selected(23)">Ocupado</td>
+                                <td id="24"  class="edo" onclick="selected(24)">Ocupado</td>
+                                <td id="25"  class="edo" onclick="selected(25)">Ocupado</td>
+                                
                                 
                             </tr>
                         </table>
@@ -247,6 +252,28 @@
         
         <!-- Ends regydisp section-->
         
+        <script>
+            function selected(id) {
+                var edo = document.getElementById(id).innerHTML;
+                
+                if(edo == 'Disponible'){
+                    document.getElementById(id).innerHTML = 'Ocupado';
+                    document.getElementById(id).style.fontWeight = "300";
+                    document.getElementById(id).style.color = "#c6c6c6";
+                }
+                else{
+                    document.getElementById(id).innerHTML = 'Disponible';
+                    document.getElementById(id).style.fontWeight = "bold";
+                    document.getElementById(id).style.color = "#669999";
+
+                }
+
+                
+                
+                
+            }
+        </script>
+    
         
         
         <footer>
