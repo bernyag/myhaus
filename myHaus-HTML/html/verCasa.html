@@ -16,12 +16,9 @@
         <nav class="sticky">
                 <div class="row">
                     <a href="../home.html"><img src="img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"></a>
-                    <ul class="main-nav js--main-nav">
-
+                    <ul class="main-nav js--main-nav " id="tipo-huesped">
                         <li><a href="rentarCasa.html">Buscar Hogar</a></li>
-                        <li><a href="ofreceHogar.html">Ofrecer Hogar</a></li>
                         <li><a href="miHospedaje.html">Mi Hospedaje</a></li>
-
                         <li><a href="#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
@@ -410,6 +407,28 @@
                 
             </div>
         </section>
+        
+        <script>
+            
+            function iniciaSesion(){
+                var usuario = sessionStorage.getItem("tipoUsuario");
+
+                if(usuario == 'huesped'){
+                    document.getElementById("tipo-huesped").style.display = "block";
+                    document.getElementById("tipo-anfitrion").style.display = "none";
+                    document.getElementById("default-nav").style.display = "none";
+                }
+                else{
+                    if(usuario == 'anfitrion'){
+                        document.getElementById("tipo-anfitrion").style.display = "block";
+                        document.getElementById("tipo-huesped").style.display = "none";
+                        document.getElementById("default-nav").style.display = "none";
+
+                    }
+                }
+            } 
+        
+        </script>
         <!-- Ends contacto section-->
         
         <footer>
