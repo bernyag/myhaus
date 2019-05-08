@@ -620,12 +620,12 @@ input[type=email]{
     font-size: 300%;
 }
 .info-cuentas{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #548181;
     width: auto;
     position: absolute;
-    bottom: 5%;
-    left: 2%;
+    bottom: 20%;
+    left: 50%;
 }
 .info-cuentas h3{
     margin-top: 20px;
