@@ -318,6 +318,8 @@ header{
 .sign-up h2{ color: #fff; }
 .sign-up h3{ text-align: center; }
 
+
+
 .cuenta-box ul{
     list-style: none;
 }
@@ -328,76 +330,18 @@ header{
     margin-left: 10px;
 }
 
-.info-cuentas{
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 520px;
-    border: 1px solid #548181;
-}
 
-.info-cuentas p{
-    margin: 5px 20px;
-}
-.info-cuentas h3{
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 20px;
-    border-bottom: 1px solid #669999;
-    width: 50%;
-}
-.info-cuentas h3:last-of-type{
-    margin-top: 20px;
-}
-.icon-cuenta{
-    font-size: 110%;
-    margin-right: 10px;
-    color: #669999;
-}
-
-.info-cuentas ul li{
-    list-style: decimal;
-    margin-left: 10%;
-    margin-bottom: 10px;
-}
 
 .sesion-text{
     font-size: 90%;
 }
 
-.sesion-box{
-    background-color: #669999;
-    color: #fff;
-    border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
-    border: 1px solid #548181;
-    height: 520px;
-}
-
-.sesion-box .btn-full{
-    background-color: #548181 ;
-}
-.sesion-box .btn-full:hover,
-.sesion-box .btn-full:active{
-    background-color: #486d6d;
-    border: 1px solid #fff;
-}
-
-.sesion-box div{
-    padding: 15px;
-    border-bottom: 1px solid #548181;
-}
-
-.sesion-box div:last-child{
-    text-align: center;
-    border: 0;
-}
 
 .cuenta-box{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #555;
     border-radius: 5px;
     width: 90%;
-    margin-left: 5%;
     border: 1px solid #548181;
     height: 520px;
 }
@@ -433,20 +377,10 @@ header{
     margin-right: 10px;
 }
 
-.sesion-box li,
+
 .cuenta-box li{
     font-size: 70%;
     padding-bottom: 10px;
-}
-
-.sesion-box ul li:last-child{
-    font-size: 60%;
-    padding-top: 30px;
-    margin-bottom: 65px;
-}
-
-.sesion-box ul{
-    padding-top: 50px;
 }
 .cuenta-box ul li:last-child{
     font-size: 60%;
@@ -472,12 +406,55 @@ header{
   box-sizing: border-box;
 }
 
+/* Liga para abrir Pop-Up */
+
 .cuenta-box span{
     display: block;
-    font-size: 70%;
+    font-size: 100%;
     color: #669999;
     margin-top: 20px;
 }
+.cuenta-box span:hover{
+   border-bottom: 1px solid;
+    color: #407272;
+}
+
+/* Info de tipos de cuentas */
+
+.container .info-cuentas{
+    height: 520px;
+    margin-left: 10px;
+    font-size: 80%;
+}
+
+.info-cuentas p{
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.info-cuentas h3{
+    margin-top: 20px;
+    margin-left: 25%;
+    text-align: center;
+    border-bottom: 1px solid #669999;
+    width: 50%;
+}
+.info-cuentas h3:last-of-type{
+    margin-top: 50px;
+}
+
+.info-cuentas ul li{
+    list-style: decimal;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+.icon-cuenta{
+    font-size: 110%;
+    margin-right: 10px;
+    color: #669999;
+}
+
+
 
 /* Set a style for all buttons */
  button{
@@ -543,7 +520,7 @@ span.psw {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 40%; /* Could be more or less, depending on screen size */
+  width: 90%; /* Could be more or less, depending on screen size */
 }
 
 .modal input[type=text],
@@ -553,22 +530,26 @@ span.psw {
     width: 70%;
 }
 
+/* Campos crear cuenta */
+.crea-cuenta{
+    border-left: 1px solid #548181;
+}
 
-.container ul{
+.container .crea-cuenta ul{
     margin-top: 10px;
     list-style: none;
 }
-.container ul li{
+.container .crea-cuenta ul li{
     margin-left: 30px;
     margin-top: 10px;
     
 }
 
 .container button{
-    background-color: #4CAF50;
+    background-color: #669999;
     color: white;
     padding: 14px 20px;
-    margin: 10px 0;
+    margin-top: 30px;
     border: none;
     cursor: pointer;
     width: 80%;
@@ -576,10 +557,10 @@ span.psw {
     margin-left: 10%;
 }
 
-.container p{
+.container .crea-cuenta p{
     font-size: 90%;
     font-weight: 300;
-    color: #000;
+    color: #555;
     text-align: center;
     padding: 10px 0;
     display: none;
@@ -603,7 +584,8 @@ span.psw {
 }
 
 .cancelbtn{
-    margin: 5px 10%;
+    margin-left: 90%;
+    margin-bottom: 10px;
 }
 
 /* Add Zoom Animation */
