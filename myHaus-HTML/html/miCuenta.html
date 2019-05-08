@@ -14,15 +14,19 @@
         
 
     </head>
-    <body>
+    <body onload="iniciaSesion()">
         <nav class="sticky">
                 <div class="row">
                     <a href="../index.html"><img src="img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"></a>
-                    <ul class="main-nav js--main-nav">
+                    <ul class="main-nav js--main-nav " id="tipo-huesped">
                         <li><a href="rentarCasa.html">Buscar Hogar</a></li>
-                        <li><a href="#">Ofrecer Hogar</a></li>
-                        <li><a href="#">Mi Hospedaje</a></li>
-                        <li><a href="#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
+                        <li><a href="miHospedaje.html">Mi Hospedaje</a></li>
+                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
+                    </ul>
+                    <ul class="main-nav js--main-nav" id="tipo-anfitrion">
+                        <li><a href="ofreceHogar.html">Ofrecer Hogar</a></li>
+                        <li><a href="vistaPropiedades.html">Mis Hogares</a></li>
+                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
                 </div>
@@ -48,7 +52,7 @@
                         <div class="datos">
                             <p>JuanGarcía47</p>
                             <p>juangr47@gmail.com</p>
-                            <strong>Huésped</strong>
+                            <strong id="tipo-cuenta"></strong>
                         </div>
                     </div>
                     <div class="row">
@@ -56,15 +60,15 @@
                         <div class="labels">
                             <label>Nombre: </label>
                             <label>Teléfono:</label>
-                            <label>Universidad:</label>
+                            <label id="lbUni">Universidad:</label>
                         </div>
                         <div class="datos">
                             <p>Juan García</p>
                             <p>55-38-94-37-86</p>
-                            <p>Instituto Tecnológico Autónomo de México (ITAM)</p>
+                            <p id="Uni">Instituto Tecnológico Autónomo de México (ITAM)</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="tarjetas">
                     <h3>Tarjetas:</h3>
                         <div class="labels">
                             <label>Tarjeta 1: </label>
@@ -78,7 +82,7 @@
                     </div>
                     <div class="row">
                         <button class="btn">Actualizar datos</button>
-                        <a href="../index.html"><button class="btn-cerrar">Cerrar sesión</button></a>
+                        <a href="../index.html"><button class="btn-cerrar" onclick="cerrarSesion()">Cerrar sesión</button></a>
                     </div>
                     
                 </div>
@@ -86,6 +90,34 @@
         
         
         </section>
+        
+        <script>
+            function iniciaSesion(){
+                var usuario = sessionStorage.getItem("tipoUsuario");
+
+                if(usuario == 'huesped'){
+                    document.getElementById("tipo-huesped").style.display = "block";
+                    document.getElementById("tipo-anfitrion").style.display = "none";
+                    document.getElementById("tipo-cuenta").innerHTML = "Huésped";
+                    
+                }
+                else{
+                    if(usuario == 'anfitrion' ){
+                        document.getElementById("tipo-anfitrion").style.display = "block";
+                        document.getElementById("tipo-huesped").style.display = "none";
+                        document.getElementById("lbUni").style.display = "none";
+                        document.getElementById("Uni").style.display = "none";
+                        document.getElementById("tarjetas").style.display = "none";
+                        document.getElementById("tipo-cuenta").innerHTML = "Anfitrión";
+                        
+                    }
+                }
+            } 
+            
+            function cerrarSesion(){
+                sessionStorage.removeItem("tipoUsuario");
+            }
+        </script>
         
         <footer>
             <div class="row">

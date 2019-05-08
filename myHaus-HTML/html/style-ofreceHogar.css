@@ -318,6 +318,7 @@ textarea {
     border-radius: 3px;
     background-color: rgb(102, 153, 153,0.6);
     border: 1px solid #ccc;
+    font-size: 70%;
 }
 
 textarea {
@@ -359,24 +360,21 @@ h4{
     margin-bottom: 10px;
 }
 
-.filtros{
-    list-style: none;
-}
-
-
 
 .filtros li{
-    text-align: center;
+    list-style: none;
+    text-align: left;
     font-size: 80%;
     padding:10px 10px;
     border-bottom: 1px dotted #548181;
     border-bottom-width: 60%;
+    padding-left: 30%;
 }
 
 .filtros li:last-child{
-    text-align: center;
-    border-bottom: 0px solid #548181;
+    border-bottom: 0;
 }
+
 
 .filyser{
     margin-left: 22%;
@@ -385,23 +383,9 @@ h4{
     width:35%; 
 }
 
-.filtros .ul{
-    list-style: none;
-    text-align: center;
-    align-content: center;
-    border-bottom: 0px solid #548181;
-}
-
-.filtros .li .input,
-.filtros .li .span{
-    margin-left: 20px;
-    margin-bottom: 5px;
-    margin-right: 8px;
-}
-
 .filtros .servicios{ list-style: none; }
 .filtros .servicios li{ 
-    margin-left: -10px;
+    margin-left: -60px;
     text-align: left;
     border: 0;
 }
@@ -417,8 +401,19 @@ h4{
 /******* Reglamento y disponibilidad *******/
 
 .reglas-form {  
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+}
+
+.reglas-form textarea {  
+    width: 100%;
+    height: 300px;
+    margin-left: 20%;
+    font-size: 70%;
+}
+
+.disponibilidad p{
+    font-size: 90%;
 }
 
 
@@ -454,16 +449,13 @@ h4{
 }
 .tabladisp tr{
     width: 40px;
+    font-size: 95%;
 }
 
-.selected {
-    font-weight: bold;
-    color: #669999;
-}
-
-.ocupado {
+.tabladisp .edo{
     font-weight: 300;
     color: #c6c6c6;
+    cursor: pointer;
 }
 .tabladisp li {
     margin-bottom: 15px;
