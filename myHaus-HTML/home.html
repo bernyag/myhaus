@@ -217,16 +217,25 @@
                         var usuario = sessionStorage.getItem("tipoUsuario");
                         var tbUser = document.getElementById("correo").value;
                         
-                        
-                        if(usuario == 'huesped' || tbUser == 'huesped@itam.mx' ){
+                        if(tbUser == 'huesped@itam.mx'){
                             sessionStorage.setItem("tipoUsuario","huesped");
+                            usuario = sessionStorage.getItem("tipoUsuario");
+                        }
+                        else{
+                            if(tbUser == 'anfitrion@itam.mx'){
+                                sessionStorage.setItem("tipoUsuario","anfitrion");
+                                usuario = sessionStorage.getItem("tipoUsuario");
+                            }
+                        }
+                        
+                        
+                        if(usuario == 'huesped'){
                             document.getElementById("tipo-huesped").style.display = "block";
                             document.getElementById("tipo-anfitrion").style.display = "none";
                             document.getElementById("default-nav").style.display = "none";
                         }
                         else{
-                            if(usuario == 'anfitrion' || tbUser == 'anfitrion@itam.mx'){
-                                sessionStorage.setItem("tipoUsuario","anfitrion");
+                            if(usuario == 'anfitrion' ){
                                 document.getElementById("tipo-anfitrion").style.display = "block";
                                 document.getElementById("tipo-huesped").style.display = "none";
                                 document.getElementById("default-nav").style.display = "none";
