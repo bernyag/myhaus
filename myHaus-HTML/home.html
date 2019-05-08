@@ -30,6 +30,8 @@
                         <li><a href="#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
                     </ul>
                     <ul class="main-nav " id="default-nav">
+                        <li><a href="#sesion">Buscar Hogar</a></li>
+                        <li><a href="#sesion">Mi Hospedaje</a></li>
                         <li><a href="#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Iniciar Sesion</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
@@ -176,7 +178,7 @@
                                         <li><input type="checkbox" name="recordar" id="recordar"> Acepto terminos y condiciones</li>
                                     </ul>
                                     <p id="cuenta-creada">¡Cuenta creada con éxito! Ahora inicia sesión con tu cuenta</p>
-                                    <button type="submit" onclick="creaCuenta()" id="btn-crear">Crear cuenta</button>
+                                    <button type="button" onclick="creaCuenta()" id="btn-crear">Crear cuenta</button>
                                 </div>
                             </div> 
                         </div>
@@ -204,10 +206,10 @@
                     }
 
                     function creaCuenta(){
-                        
                         var tipo = document.getElementById("tipo").value;
+                        
                         sessionStorage.setItem("tipoUsuario",tipo);
-                        alert("¡Cuenta creada con éxito! Ahora inicia sesión con tu nueva cuenta de " + tipo);
+                        //alert("¡Cuenta creada con éxito! Ahora inicia sesión con tu nueva cuenta de " + tipo);
 
                     }
 
