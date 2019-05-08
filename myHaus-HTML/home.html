@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/Grid.css">
         <link rel="stylesheet" type="text/css" href="css/querries-home.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-        <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+       
 
         
         <title>MyHaus</title>
@@ -21,6 +21,9 @@
                     <img src="html/img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"> 
                     <ul class="main-nav js--main-nav " id="tipo-huesped">
                         <li><a href="html/rentarCasa.html">Buscar Hogar</a></li>
+
+                        <li><a href="html/ofreceHogar.html">Ofrecer Hogar</a></li>
+
                         <li><a href="html/miHospedaje.html">Mi Hospedaje</a></li>
                         <li><a href="#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
                     </ul>
@@ -96,9 +99,11 @@
                             </ul>
                         </div>
                         <div>
+
                             <a href="#" class="btn btn-full" onclick="iniciaSesion()">Iniciar sesión</a>
                             <br>
                             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>¿No tienes cuenta? ¡Regístrate ahora!</span></button>
+
                         </div>
                     </div>
                 </div>
@@ -309,7 +314,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/script-home.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="html/firebase.js"></script>
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDxj5n4LrbLCQe8rS8-emVvefwrgy2VxXM",
+            authDomain: "myhaus-itam.firebaseapp.com",
+            databaseURL: "https://myhaus-itam.firebaseio.com",
+            projectId: "myhaus-itam",
+            storageBucket: "myhaus-itam.appspot.com",
+            messagingSenderId: "912191210053",
+            appId: "1:912191210053:web:79f1f543cf4f0b00"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="html/index.js"></script>
      
 
     
