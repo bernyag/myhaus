@@ -74,6 +74,7 @@
                 <h2>Comienza a rentar hoy mismo</h2>
             </div>
             <div class="row">
+                <div class="col span-1-of-3"></div>
                 <div class="col span-1-of-3">
                     <div class="cuenta-box">
                         <div>
@@ -88,12 +89,15 @@
                             </ul>
                         </div>
                         <div>
+
                             <a href="#" onclick="login()" class="btn btn-full">Iniciar sesión</a>
                             <br><span>¿No tienes cuenta? ¡Regístrate ahora!</span>
                             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Crear cuenta</button>
+
                         </div>
                     </div>
                 </div>
+                <!-- 
                 <div class="col span-2-of-3 info-cuentas">
                     
                     <h3><ion-icon name="key" class="icon-cuenta"></ion-icon>Cuenta de huésped</h3>
@@ -114,38 +118,59 @@
                         <li>Registra tu oferta y ¡listo! Ya está a disposición de los huéspedes</li>
                     </ul>
                 </div>
+                Intro section-->
 
                 <div id="id01" class="modal">
 
                     <form class="modal-content animate" action="/action_page.php">
                         <div class="imgcontainer">
                             <span onclick="salir()" class="close" title="Close Modal">&times;</span>
-                        <h3>Crea tu cuenta</h3>
-                        <img src="html/img/img_avatar2.png" alt="Avatar" class="avatar">
+                        <h3>Crea tu cuenta ahora</h3>
                         </div>
 
                         <div class="container">
-                          <ul>
-                                <li>Tipo de cuenta:
-                                    <br><select name="tipo-cuenta" id="tipo">
-                                        <option value="huesped" selected>Huésped</option>
-                                        <option value="anfitrion" >Anfitrión</option>
-                                        </select></li>
-                                <li>Nombre de usuario:
-                                    <br><input type="text" name="nombre" id="nom" placeholder="Username" required></li>
-                                <li>Correo:
-                                    <br><input type="email" name="correo" id="correo" placeholder="correo@example.com" required></li>
-                                <li>Contraseña:
-                                    <br><input type="password" name="pswd" id="pswd" placeholder="Contraseña" required> </li>
-                                <li>Confirmar contraseña:
-                                    <br><input type="password" name="confpswd" id="cpswd" placeholder="Contraseña" required> </li>
-                                <li><input type="checkbox" name="recordar" id="recordar"> Acepto terminos y condiciones</li>
-                            </ul>
-                            <p id="cuenta-creada">¡Cuenta creada con éxito! Ahora inicia sesión con tu cuenta</p>
-                            <button type="submit" onclick="creaCuenta()" id="btn-crear">Crear cuenta</button>
-                            
-                        </div>
+                            <div class="row">
+                                <div class="col span-1-of-2 info-cuentas">
+                                    <h3><ion-icon name="key" class="icon-cuenta"></ion-icon>Cuenta de huésped</h3>
+                                    <p><em>Si eres estudiante y quieres mudarte a la capital para hacer tu carrera, myhaus es la solución. ¡Crea tu cuenta ya!</em></p>
+                                    <br>
+                                    <ul>
+                                        <li>Crea tu cuenta, o inicia sesión si ya estas registrado.</li>
+                                        <li>Ve al navegador de "buscar hogar", ahí se presentan todas las viviendas que tenemos</li>
+                                        <li>Filtra entre las opciones y encuentra tu hogar ideal en la gran ciudad</li>
+                                    </ul>
 
+                                    <h3><ion-icon name="home" class="icon-cuenta"></ion-icon>Cuenta de anfitrión</h3>
+                                    <p><em>¿Tienes un espacio de sobra? Crea tu cuenta como anfitrión y ponlo en renta con nosotros</em></p>
+                                    <br>
+                                    <ul>
+                                        <li>Crea tu cuenta, o inicia sesión si ya estas registrado. </li>
+                                        <li>Ve a "Ofrecer hogar" y sigue los pasos para subir tu espacio a nuestra página</li>
+                                        <li>Registra tu oferta y ¡listo! Ya está a disposición de los huéspedes</li>
+                                    </ul>
+                                </div>
+                                <div class="col span-1-of-2 crea-cuenta">
+                                    <ul>
+                                        <li>Tipo de cuenta:
+                                            <br><select name="tipo-cuenta" id="tipo">
+                                                <option value="huesped" selected>Huésped</option>
+                                                <option value="anfitrion" >Anfitrión</option>
+                                                </select></li>
+                                        <li>Nombre de usuario:
+                                            <br><input type="text" name="nombre" id="nom" placeholder="Username" required></li>
+                                        <li>Correo:
+                                            <br><input type="email" name="correo" id="correo" placeholder="correo@example.com" required></li>
+                                        <li>Contraseña:
+                                            <br><input type="password" name="pswd" id="pswd" placeholder="Contraseña" required> </li>
+                                        <li>Confirmar contraseña:
+                                            <br><input type="password" name="confpswd" id="cpswd" placeholder="Contraseña" required> </li>
+                                        <li><input type="checkbox" name="recordar" id="recordar"> Acepto terminos y condiciones</li>
+                                    </ul>
+                                    <p id="cuenta-creada">¡Cuenta creada con éxito! Ahora inicia sesión con tu cuenta</p>
+                                    <button type="submit" onclick="creaCuenta()" id="btn-crear">Crear cuenta</button>
+                                </div>
+                            </div> 
+                        </div>
                         <div class="pop-footer" style="background-color:#e8e8e8">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                         </div>
@@ -167,11 +192,28 @@
                 function salir(){
                     document.getElementById("cuenta-creada").style.display = "none";
                     document.getElementById('id01').style.display='none'
+                    if (sessionStorage.getItem("tipoUsuario")=='huesped'){
+                        alert("Your are a - " + sessionStorage.getItem("tipoUsuario"));
+                    }
                 }
                 
                 function creaCuenta(){
                     document.getElementById("cuenta-creada").style.display = "block";
+                    sessionStorage.setItem("tipoUsuario","huesped");
 
+                }
+                </script>
+                <script>
+                    
+                
+                // Check browser support
+                if (typeof(Storage) !== "undefined") {
+                  // Store
+                  sessionStorage.setItem("lastname", "Smith");
+                  // Retrieve
+                  document.getElementById("result").innerHTML = sessionStorage.getItem("lastname");
+                } else {
+                  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
                 }
                 </script>
                
