@@ -311,6 +311,7 @@ input[type=submit]:active{
 .descripcion{
     margin-top: -7%;
     margin-bottom: -5%;
+    background-color: #fff;
 }
 .contact-form {  
     width: 60%;
@@ -386,6 +387,7 @@ h4{
 
 .filyser{
     margin-left: 22%;
+    background-color: #fff;
 }
 .filyser .col{
     width:35%; 
@@ -402,6 +404,7 @@ h4{
 
 
 /******* Fotos *******/
+
 
 .par{
     font-size: 110%;
