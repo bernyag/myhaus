@@ -133,6 +133,14 @@ a:active{
     color: #e67e22;
 }
 
+input.file {
+    position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
@@ -394,6 +402,36 @@ h4{
 
 
 /******* Fotos *******/
+
+.par{
+    font-size: 110%;
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #669999;
+    border: 1px solid #669999;
+    color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+ /* margin: 5% 35%;*/
+  cursor: pointer;
+ text-align: center;
+}
+
+.form{
+    display: block;
+    text-align: center;
+}
+input[type=file]{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 65%;
+    color: #669999;     
+  text-decoration:none;
+  cursor: pointer;
+ text-align: left;
+}
+
 
 /***************************/
 
