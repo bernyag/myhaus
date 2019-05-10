@@ -121,6 +121,8 @@ button{
     color: #fff;
     margin-right: 16px;
 }
+
+
 .btn-ghost:link,
 .btn-ghost:visited{
     border: 1px solid #669999;
