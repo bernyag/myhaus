@@ -29,16 +29,11 @@
         
         <!-- Intro section-->
         
-        <section class="intro">
-            <div>
-                <h1>¡Renta tu casa <br> ahora en myhaus!</h1>
-            </div>
-        </section>
-        
+       
         
         <section class="intros">
             <div>
-                <a class="btn btn-full js--scroll-to-contact" id="btn-contacto" href="#">Subir Datos</a>
+                <a class="btn btn-full js--scroll-to-contact" id="btn-contacto" href="#">Editar Datos</a>
             </div>
         </section>
         
@@ -58,7 +53,8 @@
                             <label for="name">Nombre de la Casa/Título</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre o título a mostrar" required>
+                            <input type="text" name="nombre" id="nombre" 
+                                placeholder="Loft de lujo en altavista" required>
                         </div>
                     </div>
                     <div class="row">
@@ -66,7 +62,7 @@
                             <label>Descripción Breve</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Esta descripción aparecerá debajo de tu anuncio cuando los usuarios busquen hogares, debe ser muy breve y dar una primera idea del hogar que ofreces."></textarea>
+                            <textarea name="message" placeholder="Es un pequeño departamento/loft nuevo y acogedor, moderno y hermosamente adornado. Tiene todo lo necesario tanto en servicios como en comodidad. Contamos con seguridad y servicio de estacionamiento."></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -74,7 +70,11 @@
                             <label>Descripción General</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Esta descripción aparecerá en la página de tu casa, deberá ser lo más detallada posible para permitirle a los usuarios saber que estas ofreciendo."></textarea>
+                            <textarea name="message" placeholder="Es un edificio que está localizado en una muy buena zona geográfica, pues está cerca de la Calle Altavista y muy cerca del ITAM.
+Ambiente hogareño ideal para estadías prolongadas.
+Acceso por tranquila y silenciosa calle empedrada, a veinte pasos del Periférico Sur.
+Lugares de interés: Televisa, ITAM, Ciudad Universitaria, Hospital Angeles, Coyoacán y San Angel. Zona de arte y cultura.
+Ideal para profesores, alumnos de posgrado, profesionistas y parejas. "></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -83,7 +83,7 @@
                         </div>
                         <div class="col span-2-of-3">
                             <ion-icon class="icon-small" name="logo-usd" ></ion-icon>
-                                <br><input type="range" min="2000" max="50000" value="20000" step="250" class="slider" id="myRange"><p>$<span id="demo"></span></p>
+                                <br><input type="range" min="2000" max="50000" value="2000" step="250" class="slider" id="myRange"><p>$<span id="demo"></span></p>
                                 <script>
                                     var slider = document.getElementById("myRange");
                                     var output = document.getElementById("demo");
@@ -111,21 +111,21 @@
                     <ul class="filtros">
                             <li><ion-icon name="business" class="icon-small"></ion-icon><h4>Tipo de vivienda:</h4> 
                                 <br><input type="radio" name="tipo" value="casa" class="radio">Casa
-                                <br><input type="radio" name="tipo" value="cuarto" class="radio">Cuarto
+                                <br><input type="radio" name="tipo" value="cuarto" class="radio" checked>Cuarto
                                 <br><input type="radio" name="tipo" value="depto" class="radio">Departamento
                             </li>
                             <li><ion-icon name="bed" class="icon-small"></ion-icon><h4>Camas:</h4>  
-                                <br><input type="radio" name="camas" value="1" class="radio">1
+                                <br><input type="radio" name="camas" value="1" class="radio" checked>1
                                 <br><input type="radio" name="camas" value="2" class="radio">2
                                 <br><input type="radio" name="camas" value="3" class="radio">3 o más
                             </li>
                             <li><ion-icon name="key" class="icon-small"></ion-icon><h4>Cuartos:</h4>
-                                <br><input type="radio" name="cuartos" value="1" class="radio">1
+                                <br><input type="radio" name="cuartos" value="1" class="radio" checked>1
                                 <br><input type="radio" name="cuartos" value="2" class="radio">2
                                 <br><input type="radio" name="cuartos" value="3" class="radio">3 o más
                             </li>
-                            <li><ion-icon name="body" class="icon-small"></ion-icon><h4>Baños:</h4> 
-                                <br><input type="radio" name="banos" value="1" class="radio">1
+                            <li><ion-icon name="body" class="icon-small"></ion-icon><h4>Baños completos:</h4> 
+                                <br><input type="radio" name="banos" value="1" class="radio" checked>1
                                 <br><input type="radio" name="banos" value="2" class="radio">2 o más
                             </li>
                         </ul>
@@ -135,13 +135,13 @@
                     <ul class="filtros">
                         <li><ion-icon name="ribbon" class="icon-small"></ion-icon><h4>Cuentas con:</h4>
                                 <ul class="servicios">
-                                    <li><input type="checkbox" name="serv" class="radio">Wifi</li>
+                                    <li><input type="checkbox" name="serv" class="radio" checked>Wifi</li>
                                     <li><input type="checkbox" name="serv" class="radio">TV</li>
                                     <li><input type="checkbox" name="serv" class="radio">Lavandería</li> 
                                     <li><input type="checkbox" name="serv" class="radio">Estacionamiento</li>  
-                                    <li><input type="checkbox" name="serv" class="radio">Ama de llaves</li> 
-                                    <li><input type="checkbox" name="serv" class="radio">Seguridad</li>
-                                    <li><input type="checkbox" name="serv" class="radio">Cocina</li>
+                                    <li><input type="checkbox" name="serv" class="radio" checked>Ama de llaves</li> 
+                                    <li><input type="checkbox" name="serv" class="radio" checked>Seguridad</li>
+                                    <li><input type="checkbox" name="serv" class="radio" checked>Cocina</li>
                                 </ul> 
                             </li>
                     </ul>
@@ -160,10 +160,6 @@
                     <form method="post" enctype="multipart/form-data" target="_blank">
                     <p class="par">Selecciona las fotos que deseas subir:</p> <br>
                     <input type="file" name="myFile[]" multiple onchange="readURL(this);"> <br> <br>
-                        <img id="foto2" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto1" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto3" src="http://placehold.it/180" alt="foto" />
-                    </form> 
                 </div>
           </div>
         </section>
@@ -181,9 +177,13 @@
                         <form method="post" action="#" class="reglas-form">
                             <div class="row">
                                 <div class="col span-3-of-4">
-                                    <textarea name="message" placeholder="Esta área es para exponer las reglas que tendrá su hogar.      
-
-Recomendamos escribirlo en forma de lista..."></textarea>
+                                    <textarea name="message" placeholder="
+    1. Se permiten visitas, siempre y cuando hayan avisado con tiempo
+    2. Prohibido fumar
+    3. Prohibido organizar fiestas y eventos
+    4. Horario de llegada 8:00 a 21:00 hrs
+    5. Se pueden llevar mascotas
+    6. Siempre dejar ventanas y puertas cerradas al salir"></textarea>
                                 </div>
                             </div>
 
