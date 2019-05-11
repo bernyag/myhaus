@@ -97,12 +97,18 @@
                     document.getElementById("tipo-huesped2").style.display = "block";
                     document.getElementById("tipo-anfitrion1").style.display = "none";
                     document.getElementById("tipo-anfitrion2").style.display = "none";
+                    document.getElementById("tipo-cuenta").innerHTML = "Huésped";
                 }
                 else{
                     if(usuario == 'anfitrion' ){
                         document.getElementById("tipo-anfitrion1").style.display = "block";
                         document.getElementById("tipo-anfitrion2").style.display = "block";
                         document.getElementById("tipo-huesped2").style.display = "none";
+                        document.getElementById("tarjetas").style.display = "none";
+                        document.getElementById("lbUni").style.display = "none";
+                        document.getElementById("Uni").style.display = "none";
+                        document.getElementById("tipo-cuenta").innerHTML = "Anfitrión";
+                        
 
                     }
                 }
