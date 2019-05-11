@@ -3,36 +3,36 @@
     <head>
         
         <meta charset="utf-8">
-        
-        <link rel="stylesheet" type="text/css" href="style-vistaPropiedades.css">
+        <link rel="stylesheet" type="text/css" href="style-ofreceHogar.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="Grid.css">
-        <link rel="icon" type="image/ico" href="html/img/logo-negro.png" />
-        <title>myhaus - Mis Hogares</title>
-
-
+        <link rel="stylesheet" type="text/css" href="responsive.css">
         
+        <title>myhaus - Mis Hogares</title>
+        <link rel="icon" type="image/ico" href="img/logo-negro.png"/>
 
     </head>
-    <body>
+    
+    <body class="mis-hogares">
         <nav class="sticky">
                 <div class="row">
                     <a href="../index.html"><img src="img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"></a>
-                    <ul class="main-nav">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="rentarCasa.html">Buscar Hogar</a></li>
                         <li><a href="ofreceHogar.html">Ofrecer Hogar</a></li>
-                        <li><a href="miHospedaje.html">Mis Hogares</a></li>
-                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
+                        <li><a href="vistaPropiedades.html">Mis Hogares</a></li>
+                        <li><a href="miCuenta.html" id="sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi Cuenta</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
                 </div>
         </nav>
         
-        <section class="quienes-somos js--quienes-somos">
+        <section class="mis-hogares">
             <div class="row">
                 <h2>Mis Hogares</h2>
                 
             </div>
-            <div class="row">
+            <div class="row primeras-casas">
                 <div class="col span-1-of-4">
                     <img src="img/LoftLujo/1.png" alt = "casa 1" class="img">
                 </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         
-        <div class="row">
+        <div class="row segundas-casas">
                 <div class="col span-1-of-4">
                     <img src="img/casa2.png" alt = "casa 2" class="img">
                 </div>
@@ -82,7 +82,7 @@
         
         <footer>
             <div class="row">
-                <div class=" col span-1-of-2">
+                <div class="col span-1-of-2">
                     <ul class="footer-nav">
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Blog</a></li>
@@ -91,7 +91,7 @@
                         <li><a href="#">Android App</a></li>
                     </ul>
                 </div>
-                <div class=" col span-1-of-2">
+                <div class="col span-1-of-2">
                     <ul class="social-links">
                         <li><a href="#"><ion-icon name="logo-facebook" class="facebook-logo"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="logo-twitter" class="twitter-logo"></ion-icon></a></li>
@@ -107,12 +107,11 @@
             </div>
         </footer>
         
-    
-            
-            
-        
-        
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="mobile-nav.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="animation-verCasa.js"></script>
         
     </body>
 </html>

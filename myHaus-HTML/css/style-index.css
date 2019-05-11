@@ -210,7 +210,7 @@ header{
 
 .main-nav li{
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 35px;
     font-weight: 400;
 }
 
@@ -218,9 +218,7 @@ header{
     font-size: 350%; 
     display: inline-block;
 }
-.main-nav li:last-child{
-    font-size: 50%;
-}
+
 
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -620,11 +618,11 @@ span.psw {
 /*  FUNCIONALIDAD SESSION */
 /* ---------------------------------------------------------------------*/
 
-#tipo-huesped{
-    display: none;
+#default,
+#sesion{
+    font-size: 50%;
 }
-
-#tipo-anfitrion{
+#sesion{
     display: none;
 }
 

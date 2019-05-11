@@ -17,21 +17,14 @@
         <nav class="sticky">
                 <div class="row">
                     <a href="../index.html"><img src="img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"></a>
-                    <ul class="main-nav js--main-nav " id="tipo-huesped">
-                        <li><a href="rentarCasa.html">Buscar Hogar</a></li>
-                        <li><a href="miHospedaje.html">Mi Hospedaje</a></li>
-                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
-                    </ul>
-                    <ul class="main-nav js--main-nav" id="tipo-anfitrion">
-                        <li><a href="ofreceHogar.html">Ofrecer Hogar</a></li>
-                        <li><a href="vistaPropiedades.html">Mis Hogares</a></li>
-                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
-                    </ul>
-                    <ul class="main-nav " id="default-nav">
-                        <li><a href="rentarCasa.html">Buscar Hogar</a></li>
-                        <li><a href="#">Ofrecer Hogar</a></li>
-                        <li><a href="#">Mi Hospedaje</a></li>
-                        <li><a href="../index.html#sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Iniciar Sesion</a></li>
+                    <ul class="main-nav js--main-nav ">
+                        <li><a href="rentarCasa.html" id="tipo-huesped1">Buscar Hogar</a></li>
+                        <li><a href="ofreceHogar.html" id="tipo-anfitrion1">Ofrecer Hogar</a></li>
+                        <li><a href="miHospedaje.html" id="tipo-huesped2">Mi Hospedaje</a></li>
+                        <li><a href="vistaPropiedades.html" id="tipo-anfitrion2">Mis Hogares</a></li>
+                        <li><a href="miCuenta.html" id="sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi Cuenta</a></li>
+                        <li><a href="../index.html#inicio-sesion" id="default"><ion-icon name="contact" class="icon-nav"></ion-icon>Iniciar Sesion</a></li>
+                        
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
                 </div>
@@ -424,17 +417,27 @@
             
             function iniciaSesion(){
                 var usuario = sessionStorage.getItem("tipoUsuario");
+                
+                document.getElementById("tipo-anfitrion1").style.display = "none";
+                document.getElementById("tipo-anfitrion2").style.display = "none";
+                document.getElementById("tipo-huesped2").style.display = "none";
 
-                if(usuario == 'huesped'){
-                    document.getElementById("tipo-huesped").style.display = "block";
-                    document.getElementById("tipo-anfitrion").style.display = "none";
-                    document.getElementById("default-nav").style.display = "none";
+               if(usuario == 'huesped'){
+                    document.getElementById("tipo-huesped1").style.display = "block";
+                    document.getElementById("tipo-huesped2").style.display = "block";
+                    document.getElementById("tipo-anfitrion1").style.display = "none";
+                    document.getElementById("tipo-anfitrion2").style.display = "none";
+                    document.getElementById("default").style.display = "none";
+                    document.getElementById("sesion").style.display = "block";
                 }
                 else{
                     if(usuario == 'anfitrion' ){
-                        document.getElementById("tipo-anfitrion").style.display = "block";
-                        document.getElementById("tipo-huesped").style.display = "none";
-                        document.getElementById("default-nav").style.display = "none";
+                        document.getElementById("tipo-anfitrion1").style.display = "block";
+                        document.getElementById("tipo-anfitrion2").style.display = "block";
+                        document.getElementById("tipo-huesped2").style.display = "none";
+                        document.getElementById("default").style.display = "none";
+                        document.getElementById("sesion").style.display = "block";
+
                     }
                 }
             } 

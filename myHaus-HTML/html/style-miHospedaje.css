@@ -414,12 +414,12 @@ footer p{
     margin: 3% .5% 3% .5% !important;
 }
 .margin2PC{
-    margin: 2% !important;
+    margin: 5% !important;
 }
 
 
 .acciones{
-    margin-top: 4fce0px !important;
+    margin-top: 200px;
 }
 
 .starRating:not(old){
@@ -471,8 +471,8 @@ footer p{
 .btns1{
     width: 39%;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    display: inline-block;
 }
 
 .btns2{
@@ -516,7 +516,7 @@ footer p{
     right: 24%;
     border: 3px solid #f1f1f1;
     z-index: 9;
-    width: 728px;
+    width: 60%;
 }
 
 /* Add styles to the form container */
@@ -584,6 +584,7 @@ textarea{
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: #fc6767;
+    
 }
 
 /* Add some hover effects to buttons */
@@ -622,10 +623,10 @@ input[type=email]{
 .info-cuentas{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #548181;
-    width: auto;
+    width: 500px;
     position: absolute;
-    bottom: 20%;
-    left: 50%;
+    bottom: 30%;
+    margin-left: 20px;
 }
 .info-cuentas h3{
     margin-top: 20px;

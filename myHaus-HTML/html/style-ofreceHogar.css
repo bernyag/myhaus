@@ -109,7 +109,8 @@ a:active{
 
 /* ------BUTTONS-----*/
 .btn:link, 
-.btn:visited {
+.btn:visited,
+button{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -121,7 +122,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+button{
     background-color: #669999;
     border: 1px solid #669999;
     color: #fff;
@@ -389,6 +391,15 @@ h4{
     margin-left: 22%;
     background-color: #fff;
 }
+
+.filyser .filtros-box{
+    margin-left: 50px;
+}
+
+.filyser h2{
+    font-size: 130%;
+}
+
 .filyser .col{
     width:35%; 
 }
@@ -443,13 +454,12 @@ input[type=file]{
 
 .reglas-form {  
     width: 90%;
-    margin: 0 auto;
 }
 
 .reglas-form textarea {  
-    width: 100%;
+    width: 120%;
     height: 300px;
-    margin-left: 20%;
+    margin-left: 5%;
     font-size: 70%;
 }
 
@@ -464,12 +474,9 @@ input[type=file]{
 }
 
 .tabladisp table {
-    align-content: center;
     text-align: center;
-    table-layout: fixed;
-    width: 90%;
+    width: 100%;
     border-spacing: 0;
-    margin-left: 5%;
 }
 
 .tabladisp th, td {
@@ -596,6 +603,47 @@ footer p{
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* ---------------------------------------------------------------------*/
+/*  VISTA-PROPIEDADES */
+/* ---------------------------------------------------------------------*/
+.state_rented{
+    border-style: solid;
+    border-width: medium;
+    border-color: limegreen;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.state_toRent{
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.primeras-casas{
+    margin-bottom: 50px;
+}
+
+.mis-hogares h2{
+    margin: 60px 0;
 }
 
 
