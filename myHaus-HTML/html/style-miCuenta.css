@@ -20,6 +20,23 @@ body{
 }
 
 /* ---------------------------------------------------------------------*/
+/*  FUNCIONALIDAD SESSION */
+/* ---------------------------------------------------------------------*/
+
+#tipo-huesped{
+    display: none;
+}
+
+#tipo-anfitrion{
+    display: none;
+}
+
+#sesion{
+    font-size: 50%;
+}
+
+
+/* ---------------------------------------------------------------------*/
 /* GENERALES */
 /* ---------------------------------------------------------------------*/
 
@@ -179,9 +196,7 @@ input[type=submit]:active{
     font-size: 350%; 
     display: inline-block;
 }
-.main-nav li:last-child{
-    font-size: 50%;
-}
+
 
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -292,7 +307,7 @@ input[type=submit]:active{
 
 .datos{
     float: left;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 .datos p,
 .datos strong{

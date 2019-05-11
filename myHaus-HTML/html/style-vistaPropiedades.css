@@ -219,6 +219,7 @@ input[type=submit]:active{
     width: auto;
     vertical-align: middle;
     padding-top: 10px;
+    float: left;
     padding-bottom: 10px;
 }
 
@@ -227,6 +228,8 @@ input[type=submit]:active{
     float: right;
     margin-top: 55px;
 }
+
+
 
 .main-nav li{
     display: inline-block;
@@ -238,9 +241,7 @@ input[type=submit]:active{
     font-size: 350%; 
     display: inline-block;
 }
-.main-nav li:last-child{
-    font-size: 50%;
-}
+
 
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -255,7 +256,12 @@ input[type=submit]:active{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #669999;;
+    border-bottom: 2px solid #fff;;
+}
+
+#default,
+#sesion{
+    font-size: 50%;
 }
 
 /*Mobile navigation*/
@@ -264,6 +270,7 @@ input[type=submit]:active{
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    color: #fff;
 }
 
 .mobile-nav-icon ion-icon{
@@ -279,11 +286,12 @@ input[type=submit]:active{
     background-position: center;
     background-attachment: fixed;
     position: fixed;
+    padding: 7px 0;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #eaeaea;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .sticky .main-nav{

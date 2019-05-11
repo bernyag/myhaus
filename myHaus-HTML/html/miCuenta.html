@@ -18,15 +18,12 @@
         <nav class="sticky">
                 <div class="row">
                     <a href="../index.html"><img src="img/logo-blanco.png" alt="Logo myHaus" class="logo-nav"></a>
-                    <ul class="main-nav js--main-nav " id="tipo-huesped">
-                        <li><a href="rentarCasa.html">Buscar Hogar</a></li>
-                        <li><a href="miHospedaje.html">Mi Hospedaje</a></li>
-                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
-                    </ul>
-                    <ul class="main-nav js--main-nav" id="tipo-anfitrion">
-                        <li><a href="ofreceHogar.html">Ofrecer Hogar</a></li>
-                        <li><a href="vistaPropiedades.html">Mis Hogares</a></li>
-                        <li><a href="miCuenta.html"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi cuenta</a></li>
+                    <ul class="main-nav js--main-nav ">
+                        <li><a href="rentarCasa.html" id="tipo-huesped1">Buscar Hogar</a></li>
+                        <li><a href="ofreceHogar.html" id="tipo-anfitrion1">Ofrecer Hogar</a></li>
+                        <li><a href="miHospedaje.html" id="tipo-huesped2">Mi Hospedaje</a></li>
+                        <li><a href="vistaPropiedades.html" id="tipo-anfitrion2">Mis Hogares</a></li>
+                        <li><a href="miCuenta.html" id="sesion"><ion-icon name="contact" class="icon-nav"></ion-icon>Mi Cuenta</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
                 </div>
@@ -96,20 +93,17 @@
                 var usuario = sessionStorage.getItem("tipoUsuario");
 
                 if(usuario == 'huesped'){
-                    document.getElementById("tipo-huesped").style.display = "block";
-                    document.getElementById("tipo-anfitrion").style.display = "none";
-                    document.getElementById("tipo-cuenta").innerHTML = "Huésped";
-                    
+                    document.getElementById("tipo-huesped1").style.display = "block";
+                    document.getElementById("tipo-huesped2").style.display = "block";
+                    document.getElementById("tipo-anfitrion1").style.display = "none";
+                    document.getElementById("tipo-anfitrion2").style.display = "none";
                 }
                 else{
                     if(usuario == 'anfitrion' ){
-                        document.getElementById("tipo-anfitrion").style.display = "block";
-                        document.getElementById("tipo-huesped").style.display = "none";
-                        document.getElementById("lbUni").style.display = "none";
-                        document.getElementById("Uni").style.display = "none";
-                        document.getElementById("tarjetas").style.display = "none";
-                        document.getElementById("tipo-cuenta").innerHTML = "Anfitrión";
-                        
+                        document.getElementById("tipo-anfitrion1").style.display = "block";
+                        document.getElementById("tipo-anfitrion2").style.display = "block";
+                        document.getElementById("tipo-huesped2").style.display = "none";
+
                     }
                 }
             } 

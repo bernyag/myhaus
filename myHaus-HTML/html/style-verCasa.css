@@ -30,6 +30,13 @@ body{
 #tipo-anfitrion{
     display: none;
 }
+#default,
+#sesion{
+    font-size: 50%;
+}
+#sesion{
+    display: none;
+}
 
 /* ---------------------------------------------------------------------*/
 /* GENERALES */
@@ -213,9 +220,7 @@ input[type=submit]:active{
     font-size: 350%; 
     display: inline-block;
 }
-.main-nav li:last-child{
-    font-size: 50%;
-}
+
 
 .main-nav li a:link,
 .main-nav li a:visited {
