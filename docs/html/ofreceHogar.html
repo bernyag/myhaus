@@ -162,14 +162,14 @@
                     <p class="par">Selecciona las fotos que deseas subir:</p> <br>
                     <input type="file" name="myFile[]" multiple onchange="readURL(this);"> <br><br>
                         <input type="submit" value="Subir fotos"> <br><br>
-                        <img id="foto1" class="preview-fotos" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto2" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto3" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto4" src="http://placehold.it/180" alt="foto" /> <br>
-                        <img id="foto5" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto6" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto7" src="http://placehold.it/180" alt="foto" />
-                        <img id="foto8" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto1" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto2" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto3" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto4" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto5" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto6" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto7" src="http://placehold.it/180" alt="foto" />
+                        <img class="upload-photo" id="foto8" src="http://placehold.it/180" alt="foto" />
                     </form> 
                 </div>
           </div>
@@ -323,6 +323,22 @@ Recomendamos escribirlo en forma de lista..."></textarea>
         <script src="mobile-nav.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="animation-verCasa.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    for (i = 0; i < input.files.length; i++) {
+                        var reader = new FileReader();
+                        const count = i+1;
+                        reader.onload = function (e) {                            
+                            $(`#foto${count}`)
+                                .attr('src', e.target.result);
+                        };
+
+                        reader.readAsDataURL(input.files[i]);
+                    }
+                }
+            }
+        </script>
 
         
     </body>
