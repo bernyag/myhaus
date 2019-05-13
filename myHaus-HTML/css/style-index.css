@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -184,6 +185,7 @@ input[type=submit]:active{
 }
 
 header{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0))), url(img/casa3.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)), url(img/casa3.jpg);
     height: 100vh;
     background-size: cover;
@@ -196,6 +198,7 @@ header{
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -228,6 +231,7 @@ header{
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -252,6 +256,7 @@ header{
 
 /*Sticky navigation*/
 .sticky{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0))), url(../html/img/navfoto.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(../html/img/navfoto.jpg);
     background-size: cover;
     background-position: center;
@@ -307,6 +312,7 @@ header{
 /* ---------------------------------------------------------------------*/
 
 .sign-up{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.30)),to(rgba(0, 0, 0, 0))), url(img/casa2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0)), url(img/casa2.jpg);
     background-size: cover;
     background-position: center;
@@ -401,6 +407,7 @@ header{
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -598,8 +605,8 @@ span.psw {
 }
   
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from {-webkit-transform: scale(0);transform: scale(0)} 
+  to {-webkit-transform: scale(1);transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */
