@@ -639,6 +639,11 @@ footer p{
     margin-bottom: auto;
 }
 
+.upload-photo {
+    height: 20%;
+    width: 20%;
+}
+
 .primeras-casas{
     margin-bottom: 50px;
 }
