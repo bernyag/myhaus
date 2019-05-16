@@ -408,9 +408,6 @@ h4{
   opacity: 1; /* Fully shown on mouse-over */
 }
 
-.tablasfiltros{
-    margin-left: 26%;
-}
 
 /***************************/
 
@@ -671,7 +668,7 @@ footer p{
 /* Style the input fields */
 input {
   padding: 10px;
- 
+
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
