@@ -447,6 +447,7 @@ input[type=file]{
 }
 
 
+
 /***************************/
 
 
@@ -636,6 +637,11 @@ footer p{
     object-fit: contain;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.upload-photo {
+    height: 20%;
+    width: 20%;
 }
 
 .primeras-casas{
