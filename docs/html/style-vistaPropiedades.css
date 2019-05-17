@@ -13,7 +13,7 @@ body{
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
@@ -77,27 +77,13 @@ h2:after{
 }
 
 h3{
-    font-size: 120%;
+    font-size: 100%;
     margin-bottom: 15px; 
 }
 
 /* ------LINKS-----*/
 
-a:link,
-a:visited{
-    color: #669999;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #669999;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
-}
 
-a:hover,
-a:active{
-    color: #555;
-    border-bottom: 1px solid transparent;
-}
 
 /* ------BUTTONS-----*/
 .btn:link, 
@@ -120,6 +106,7 @@ button{
     border: 1px solid #669999;
     color: #fff;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 
@@ -149,16 +136,18 @@ input[type=submit]:active{
 }
 
 .button{
-  background-color: #696969; 
-  color: white;
-  border: none;
-  padding: 8px 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
+    background-color: #696969; 
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
 
 }
+
 
 
 /* ------ICONS-----*/
@@ -178,8 +167,7 @@ input[type=submit]:active{
 /* ---IMAGES -----*/
 
 .img{
-    height: 100%;
-    width: 100%;
+    
     object-fit: contain;
     margin-top: auto;
     margin-bottom: auto;
@@ -193,9 +181,8 @@ input[type=submit]:active{
     border-color: limegreen;
     border-radius: 10px;
     text-align: center;
-    width: 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 90%;
 }
 
 .state_toRent{
@@ -204,9 +191,8 @@ input[type=submit]:active{
     border-color: red;
     border-radius: 10px;
     text-align: center;
-    width: 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 90%;
 }
 
 /* ---------------------------------------------------------------------*/
@@ -225,6 +211,7 @@ input[type=submit]:active{
 }
 
 .main-nav{
+    
     list-style: none;
     float: right;
     margin-top: 55px;
@@ -242,7 +229,9 @@ input[type=submit]:active{
     font-size: 350%; 
     display: inline-block;
 }
-
+.main-nav li:last-child{
+    font-size: 50%;
+}
 
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -257,12 +246,7 @@ input[type=submit]:active{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #fff;;
-}
-
-#default,
-#sesion{
-    font-size: 50%;
+    border-bottom: 2px solid #669999;;
 }
 
 /*Mobile navigation*/
@@ -271,17 +255,17 @@ input[type=submit]:active{
     margin-top: 30px;
     cursor: pointer;
     display: none;
-    color: #fff;
 }
 
 .mobile-nav-icon ion-icon{
     font-size: 200%;
-    color: #fff;
+    color: #669999;
 }
 
 
 /*Sticky navigation*/
 .sticky{
+    z-index: 1000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(img/navfoto.jpg);
     background-size: cover;
     background-position: center;
@@ -292,7 +276,6 @@ input[type=submit]:active{
     left: 0;
     width: 100%;
     background-color: #eaeaea;
-    z-index: 99999;
 }
 
 .sticky .main-nav{
@@ -388,4 +371,48 @@ footer p{
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+.state_rented{
+    border-style: solid;
+    border-width: medium;
+    border-color: limegreen;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.state_toRent{
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.upload-photo {
+    height: 20%;
+    width: 20%;
+}
+
+.primeras-casas{
+    margin-bottom: 50px;
+}
+
+.mis-hogares h2{
+    margin: 60px 0;
 }
