@@ -33,6 +33,8 @@ section{
     padding: 80px 0;
 }
 
+
+
 .box{
     padding: 1%;
 }
@@ -163,6 +165,11 @@ input[type=submit]:active{
     color: #fff;
 }
 
+#nextBtn,
+#prevBtn{
+    cursor: pointer;
+}
+
 /* ------ICONS-----*/
 .icon-big{
     font-size: 300%;
@@ -175,6 +182,10 @@ input[type=submit]:active{
     font-size: 200%;
     display: block;
     color: #fff;
+}
+
+.icon-small{
+    margin-right: 10px;
 }
 
 
@@ -278,6 +289,10 @@ input[type=submit]:active{
 /* ---------------------------------------------------------------------*/
 
 /******* Intro *******/
+.intros{
+    padding: 50px;
+}
+
 .intro{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 1)), url(img/renta.jpg);
     height: 100vh;
@@ -285,7 +300,6 @@ input[type=submit]:active{
     background-position: center;
     background-attachment: fixed;
     margin: 0 0;
-    padding-right: 0;
     margin-right: 0;
 }
 
@@ -337,6 +351,10 @@ textarea {
     height: 100px;
 }
 
+#desGeneral{
+    height: 200px;
+}
+
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
@@ -348,12 +366,23 @@ input[type=checkbox] {
 
 /******* filtro y servicios *******/
 
+.filyser{
+    padding: 20px 0;
+}
+
+.instru-fil{
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 .filtros-box{
     background-color: rgba(102, 153, 153, 0.5);
     border-radius: 5px;
     margin-top: 10px;
     border: 1px solid #548181;
+    height: 500px;
+    margin-right: 46px;
 }
 
 .filtros-box h3{
@@ -381,9 +410,9 @@ h4{
 
 .filtros li input,
 .filtros li span{
-    margin-left: 0px;
+    margin-left: 10px;
     margin-bottom: 5px;
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
 .filtros .servicios{ list-style: none; }
@@ -392,6 +421,11 @@ h4{
     text-align: left;
     border: 0;
 }
+
+.filtros li:last-child{
+    border-bottom: 0;
+}
+
 
 /* The slider itself */
 .slider {
@@ -409,7 +443,7 @@ h4{
 }
 
 .tablasfiltros{
-    margin-left: 26%;
+    margin-left: 23%;
 }
 
 /***************************/

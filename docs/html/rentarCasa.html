@@ -59,7 +59,7 @@
                                 <br><input type="radio" name="tipo" value="cuarto" class="radio">Cuarto
                                 <br><input type="radio" name="tipo" value="depto" class="radio">Departamento
                             </li>
-                            <li><ion-icon name="bed" class="icon-small"></ion-icon><h4>Distancia al ITAM:</h4>  
+                            <li><ion-icon name="pin" class="icon-small"></ion-icon><h4>Distancia al ITAM:</h4>  
                                 <br><input type="radio" name="camas" value="1" class="radio">menos de 1km
                                 <br><input type="radio" name="camas" value="2" class="radio">1 - 3 km
                                 <br><input type="radio" name="camas" value="3" class="radio">3 - 5 km
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col span-1-of-4" id="cuarto1">
+                <div class="col span-1-of-4" id="depto1">
                     <div class="hogares">
                             <a href="verCasa.html">
                                 <div class="hogar-box" >
@@ -97,7 +97,7 @@
                                     <div class="texto-hogar">
                                         <h3>Loft de lujo en altavista</h3>
                                         <p>
-                                            <strong>Tipo: </strong>Cuarto
+                                            <strong>Tipo: </strong>Departamento entero
                                             <br><em>Sur de la CDMX, a 5 minutos del ITAM!</em>
                                             <br>$2000 MXN al mes
                                             <br><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon><ion-icon name="star" class="icon-small"></ion-icon>
@@ -109,9 +109,9 @@
                             </a>
                     </div>
                 </div>
-                <div class="col span-1-of-4" id="depto1">
+                <div class="col span-1-of-4" id="depto2">
                     <div class="hogares">
-                            <a href="#">
+                            <a href="verCasa.html">
                                 <div class="hogar-box" >
                                     <img src="img/Casa2.jpg" alt="Hogar 2">
                                     <div class="texto-hogar">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col span-1-of-4" id="casa1">
                     <div class="hogares">
-                            <a href="#">
+                            <a href="verCasa.html">
                                 <div class="hogar-box">
                                     <img src="img/Casa4.jpg" alt="Hogar 3">
                                     <div class="texto-hogar">
@@ -149,9 +149,9 @@
                             </a>
                     </div>
                 </div>
-                <div class="col span-1-of-4" id="cuarto2">
+                <div class="col span-1-of-4" id="cuarto1">
                     <div class="hogares">
-                        <a href="#">
+                        <a href="verCasa.html"          >
                             <div class="hogar-box" >
                                 <img src="img/Departamento1.png" alt="Hogar 4">
                                 <div class="texto-hogar">
@@ -214,9 +214,9 @@
                 }
                 
                 document.getElementById("cuarto1").style.display = "block";
-                document.getElementById("cuarto2").style.display = "block";
                 document.getElementById("casa1").style.display = "block";
                 document.getElementById("depto1").style.display = "block";
+                document.getElementById("depto2").style.display = "block";
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
                 
@@ -228,21 +228,21 @@
                 if(tipo == 'casa'){
                     document.getElementById("casa1").style.display = "block";
                     document.getElementById("depto1").style.display = "none";
+                    document.getElementById("depto2").style.display = "none";
                     document.getElementById("cuarto1").style.display = "none";
-                    document.getElementById("cuarto2").style.display = "none";
                 }else{
                     if(tipo == 'cuarto'){
                         document.getElementById("cuarto1").style.display = "block";
-                        document.getElementById("cuarto2").style.display = "block";
                         document.getElementById("casa1").style.display = "none";
                         document.getElementById("depto1").style.display = "none";
+                        document.getElementById("depto2").style.display = "none";
                     }
                     else{
                         if(tipo == 'depto'){
                             document.getElementById("depto1").style.display = "block";
+                            document.getElementById("depto2").style.display = "block";
                             document.getElementById("casa1").style.display = "none";
                             document.getElementById("cuarto1").style.display = "none";
-                            document.getElementById("cuarto2").style.display = "none";
                         }
                     }
                 }
