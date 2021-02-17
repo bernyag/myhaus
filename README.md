@@ -57,6 +57,9 @@ Nosotros consideramos que las 3 funcionalidades más "presumibles" son:
   3. La experiencia que se tiene como huésped para ir a Mi Hospedaje y dejar una calificación o contactar al dueño de la casa con un mensaje.
   Notar, la experiencia está enfocada al tipo de cuenta, por lo que las opciones que ofrece la página cambian según el tipo de cuenta con la que se ingrese.
  
+ La siguiente imagen muestra la interfaz para buscar una casa, en donde se pueden elegir varios filtros para buscar el inmueble deseado:
+![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/casas.png)
+
  ## Nota 
 
 Este es un proyecto realizado sólo con FrontEnd (no tiene nada de BackEnd), por lo que muchas funcionalidades son simuladas para dar una idea de la experiencia del usuario. 
@@ -66,7 +69,3 @@ Entre estas FUNCIONALIDADES SIMULADAS se encuentran:
   · Contactar al arrendatario -  se simula la experiencia, mas no se hace el contacto
   · Subir una casa / Editar datos de casa - Se hace todo el proceso, pero no se registra, pues no hay una base donde guardar.
   · Actualizar datos en mi cuenta, es un botón que aún no esta habilitado.
-  
-La siguiente imagen muestra la interfaz para buscar una casa, en donde se pueden elegir varios filtros para buscar el inmueble deseado:
-![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/casas.png)
-
