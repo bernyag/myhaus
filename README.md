@@ -23,6 +23,7 @@ La página cuenta con las siguientes funcionalidades:
 Esta página tiene diseño responsivo, es decir, puede utilizarse en distintos dispositivos y el diseño se ajusta al tamaño de la pantalla (móvil, tablet, computadora).
 
 La siguiente imagen muestra el flujo para huésped o para anfitrión:
+
 ![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/flujo2.png)
 
 ## Acceso 
@@ -63,6 +64,7 @@ Nosotros consideramos que las 3 funcionalidades más "presumibles" son:
   Notar, la experiencia está enfocada al tipo de cuenta, por lo que las opciones que ofrece la página cambian según el tipo de cuenta con la que se ingrese.
  
  La siguiente imagen muestra la interfaz para buscar una casa, en donde se pueden elegir varios filtros para buscar el inmueble deseado:
+ 
 ![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/casas.png)
 
  ## Nota 
