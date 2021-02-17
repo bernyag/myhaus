@@ -35,6 +35,9 @@ Para entrar como HUESPED:
  · Usuario: huesped@itam.mx
 
  · Contraseña: (no tiene)
+ 
+ Un ejemplo para entrar como anfitrión es la siguiente imágen:
+ 
 
 También se puede dar click en "Registrate ahora" y crear una nueva cuenta, para luego iniciar sesión con ella.
 (Notar, no se guarda la cuenta para futuros reingresos de sesión, ya que no hay base de datos)
