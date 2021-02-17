@@ -47,7 +47,7 @@ Para cambiar de una cuenta a otra:
 Se puede ir a "Mi cuenta" y cerrar sesión
 O bien, se va al "Home" y se inicia sesión con la cuenta que se quiere
 
-###Link:
+### Link:
 Para acceder al sitio, siga el siguiente link:
 https://adsi-itam-2019.github.io/myhaus/index.html
 
