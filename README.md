@@ -36,8 +36,8 @@ Para entrar como HUESPED:
 
  · Contraseña: (no tiene)
  
- Un ejemplo para entrar como anfitrión es la siguiente imágen:
- 
+ Un ejemplo para entrar como anfitrión es la siguiente imagen:
+ ![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/login.png)
 
 También se puede dar click en "Registrate ahora" y crear una nueva cuenta, para luego iniciar sesión con ella.
 (Notar, no se guarda la cuenta para futuros reingresos de sesión, ya que no hay base de datos)
@@ -66,3 +66,7 @@ Entre estas FUNCIONALIDADES SIMULADAS se encuentran:
   · Contactar al arrendatario -  se simula la experiencia, mas no se hace el contacto
   · Subir una casa / Editar datos de casa - Se hace todo el proceso, pero no se registra, pues no hay una base donde guardar.
   · Actualizar datos en mi cuenta, es un botón que aún no esta habilitado.
+  
+La siguiente imagen muestra la interfaz para buscar una casa, en donde se pueden elegir varios filtros para buscar el inmueble deseado:
+![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/casas.png)
+
