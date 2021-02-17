@@ -37,6 +37,7 @@ Para entrar como HUESPED:
  · Contraseña: (no tiene)
  
  Un ejemplo para entrar como anfitrión es la siguiente imagen:
+ 
  ![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/login.png)
 
 También se puede dar click en "Registrate ahora" y crear una nueva cuenta, para luego iniciar sesión con ella.
@@ -46,6 +47,7 @@ Para cambiar de una cuenta a otra:
 Se puede ir a "Mi cuenta" y cerrar sesión
 O bien, se va al "Home" y se inicia sesión con la cuenta que se quiere
 
+###Link:
 Para acceder al sitio, siga el siguiente link:
 https://adsi-itam-2019.github.io/myhaus/index.html
 
