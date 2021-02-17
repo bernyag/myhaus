@@ -6,28 +6,7 @@
 
 Esta es una página web hecha para ayudar a los ITAMitas a encontrar su casa ideal más facil que nunca!
 
-
-
-Esta página tiene diseño responsivo, es decir, puede utilizarse en distintos dispositivos y el diseño se ajusta al tamaño de la pantalla (móvil, tablet, computadora).
-
-Para entrar como ANFITRIÓN:
-Usuario: anfitrion@itam.mx
-Contraseña: (no tiene)
-
-Para entrar como HUESPED:
-Usuario: huesped@itam.mx
-Contraseña: (no tiene)
-
-También se puede dar click en "Registrate ahora" y crear una nueva cuenta, para luego iniciar sesión con ella.
-(Notar, no se guarda la cuenta para futuros reingresos de sesión, ya que no hay base de datos)
-
-Para cambiar de una cuenta a otra:
-Se puede ir a "Mi cuenta" y cerrar sesión
-O bien, se va al "Home" y se inicia sesión con la cuenta que se quiere
-
-Para acceder al sitio, siga el siguiente link:
-https://adsi-itam-2019.github.io/myhaus/index.html
-
+## Funcionalidad 
 
 La página cuenta con las siguientes funcionalidades:
 
@@ -41,14 +20,42 @@ La página cuenta con las siguientes funcionalidades:
   
   · Mis Hogares- Como anfitrión, en esta área se despliegan todas las casas que hayas subido a Myhaus. Se muestra el estado de la casa (rentada o desocupada), así como un botón para poder editar.
 
+Esta página tiene diseño responsivo, es decir, puede utilizarse en distintos dispositivos y el diseño se ajusta al tamaño de la pantalla (móvil, tablet, computadora).
+
+## Acceso 
+
+Para entrar como ANFITRIÓN:
+
+· Usuario: anfitrion@itam.mx
+
+· Contraseña: (no tiene)
+
+Para entrar como HUESPED:
+
+ · Usuario: huesped@itam.mx
+
+ · Contraseña: (no tiene)
+
+También se puede dar click en "Registrate ahora" y crear una nueva cuenta, para luego iniciar sesión con ella.
+(Notar, no se guarda la cuenta para futuros reingresos de sesión, ya que no hay base de datos)
+
+Para cambiar de una cuenta a otra:
+Se puede ir a "Mi cuenta" y cerrar sesión
+O bien, se va al "Home" y se inicia sesión con la cuenta que se quiere
+
+Para acceder al sitio, siga el siguiente link:
+https://adsi-itam-2019.github.io/myhaus/index.html
+
+## Diferenciador
 
 Nosotros consideramos que las 3 funcionalidades más "presumibles" son:
   1. La experiencia desde buscar un hogar, filtrar, elegir y contactar al anfitrión.
   2. La experiencia de subir un hogar desde una cuenta de anfitrión.
   3. La experiencia que se tiene como huésped para ir a Mi Hospedaje y dejar una calificación o contactar al dueño de la casa con un mensaje.
   Notar, la experiencia está enfocada al tipo de cuenta, por lo que las opciones que ofrece la página cambian según el tipo de cuenta con la que se ingrese.
-  
  
+ ## Nota 
+
 Este es un proyecto realizado sólo con FrontEnd (no tiene nada de BackEnd), por lo que muchas funcionalidades son simuladas para dar una idea de la experiencia del usuario. 
 Entre estas FUNCIONALIDADES SIMULADAS se encuentran:
   · Filtros/Buscar - Sólo filtra por tipo de casa. El área de búsqueda específica no filtra.
@@ -56,8 +63,3 @@ Entre estas FUNCIONALIDADES SIMULADAS se encuentran:
   · Contactar al arrendatario -  se simula la experiencia, mas no se hace el contacto
   · Subir una casa / Editar datos de casa - Se hace todo el proceso, pero no se registra, pues no hay una base donde guardar.
   · Actualizar datos en mi cuenta, es un botón que aún no esta habilitado.
-  
-  
-Con esto se pòdrá explorar toda la página de manera fácil y comprensible. Esperamos sea de su agrado. 
-¡Gracias! 
-- Equipo de myahaus.
