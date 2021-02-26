@@ -10,15 +10,15 @@ Esta es una página web hecha para ayudar a los ITAMitas a encontrar su casa ide
 
 La página cuenta con las siguientes **funcionalidades**:
 
-  · **Buscar Hogar**- esta funcionalidad está disponible independientemente del tipo de cuenta. En esa página se pueden ver las opciones de casas disponibles y filtrar entre ellas, para encontrar la deseada. Se puede seleccionar una de las casas y te llevará a la página del hogar elegido para ver toda la información del mismo y, si lo deseas, contactar al dueño.
+  · **Buscar inmueble**- esta funcionalidad está disponible independientemente del tipo de cuenta. En esa página se pueden ver las opciones de casas disponibles y filtrar entre ellas, para encontrar la deseada. Se puede seleccionar una de las casas y te llevará a la página del hogar elegido para ver toda la información del mismo y, si lo deseas, contactar al dueño.
   
-  · **Mi Cuenta**- Para los dos tipos de cuentas, se muestra la información relevante. Los datos cambian según el tipo de cuenta. Además se puede cerrar sesión, lo cual te lleva de vuelta al "_Home_" y cambia el navBar de la cuenta particular al general.
+  · **Confiuración perfil**- Para los dos tipos de cuentas, se muestra la información relevante. Los datos cambian según el tipo de cuenta. Además se puede cerrar sesión, lo cual te lleva de vuelta al "_Home_" y cambia el navBar de la cuenta particular al general.
   
-  · **Mi Hospedaje**- Como huésped, se puede entrar a esta área, donde se muestra la información más importante de la renta que tienes actualmente. Aquí se puede calificar al anfitrión, contactarlo con un mensaje o hacer un pago.
+  · **Mis inmuebles**- Como huésped, se puede entrar a esta área, donde se muestra la información más importante de la renta que tienes actualmente. Aquí se puede calificar al anfitrión, contactarlo con un mensaje o hacer un pago.
   
-  · **Ofrecer Hogar**- Como anfitrión, la página permite que vayas a una opción donde puedas subir una casa. En ésta se presenta un proceso de 4 etapas, donde la página te guía para llenar los campos de información de la oferta según se desee. Al terminar aparece un mensaje de éxito en la alta.
+  · **Ofrecer inmueble**- Como anfitrión, la página permite que vayas a una opción donde puedas subir una casa. En ésta se presenta un proceso de 4 etapas, donde la página te guía para llenar los campos de información de la oferta según se desee. Al terminar aparece un mensaje de éxito en la alta.
   
-  · **Mis Hogares**- Como anfitrión, en esta área se despliegan todas las casas que hayas subido a Myhaus. Se muestra el estado de la casa (rentada o desocupada), así como un botón para poder editar.
+  · **Mis inmuebles**- Como anfitrión, en esta área se despliegan todas las casas que hayas subido a Myhaus. Se muestra el estado de la casa (rentada o desocupada), así como un botón para poder editar.
 
 Esta página tiene diseño _responsivo_, es decir, puede utilizarse en distintos dispositivos y el diseño se ajusta al tamaño de la pantalla (móvil, tablet, computadora).
 
