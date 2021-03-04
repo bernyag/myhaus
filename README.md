@@ -23,11 +23,11 @@ Esta página tiene diseño _responsivo_, es decir, puede utilizarse en distintos
 ![alt text](https://github.com/bernyag/myhaus/blob/master/ImagenesPrototipo/casas.png)
 
 
-### Link:
+## Link:
 Para acceder al sitio, siga el siguiente link:
 https://adsi-itam-2019.github.io/myhaus/index.html
 
-## Acceso 
+### Acceso 
 
 Para entrar como _ANFITRIÓN_:
 
